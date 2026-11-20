@@ -836,6 +836,7 @@ S.profiles.forEach(p => { if (!p.words) return; LESSONS.forEach(l => (l.words ||
   const b = p.words[w.key]; if (!b || (a.box || 0) > (b.box || 0)) p.words[w.key] = a;
   delete p.words[old];
 })); });
+S.profiles.forEach(p => { delete p.fehler; }); // frühere Liste „Als falsch gewertet“ (Elternbereich), gibt es nicht mehr
 const P = () => S.profiles.find(p => p.id === S.current);
 
 /* ---------- Helfer ---------- */
@@ -1179,8 +1180,6 @@ views.profiles = () => {
     <section><h3>🔒 Eltern-PIN</h3><p class="muted">${S.testPin ? 'Schützt das Testprofil (spielt gratis) und das Laden von Sicherungen.' : '<b>Noch keine PIN festgelegt.</b> Bitte jetzt festlegen, bevor die Kinder es tun. Sie schützt das Testprofil (spielt gratis) und das Laden von Sicherungen.'}</p>
       <div class="pbtns"><button class="btn ghost" data-act="changePin">🔒 ${S.testPin ? 'PIN ändern' : 'PIN festlegen'}</button>${S.profiles.some(p => p.test) ? '' : `<button class="btn ghost" data-act="testProfile">🧪 Testprofil anlegen</button>`}</div></section>
     <section><h3>✏️ Profile</h3><p class="muted">Name, Bild und Lernart ändern oder ein Profil löschen: ✏️ neben dem Profil.</p></section>
-    ${S.profiles.some(p => p.fehler && p.fehler.length) ? `<section><h3>🔎 Als falsch gewertet</h3><p class="muted">Die letzten getippten (⌨️) oder gelegten (🔤) Wörter, die als falsch gezählt wurden: eingegeben → erwartet.</p>
-      ${S.profiles.filter(p => p.fehler && p.fehler.length).map(p => `<p class="muted"><b>${esc(p.name)}:</b> ${p.fehler.map(x => `${x.t === 'write' ? '⌨️' : '🔤'} „${esc(x.got)}“ → ${esc(x.want)}`).join(' · ')}</p>`).join('')}</section>` : ''}
     ${voice ? `<section><h3>🔊 Ton</h3><p class="muted">${voice}</p></section>` : ''}
   </details>`;
 };
@@ -3512,11 +3511,6 @@ function settle(ok) {
     if (--sess.left[k] <= 0) { grade(st.w, !sess.wrong[k]); save(); }
   } else {
     sess.wrong[k] = true;
-    if (st.t === 'write' || st.t === 'tiles') { // zum Nachsehen unter „Für Eltern“: was eingegeben wurde und was erwartet war
-      const p = P(), got = st.t === 'write' ? st.typed : (st.laid || '');
-      p.fehler = [{ t: st.t, got, want: st.w.pt, at: Date.now() }, ...(p.fehler || [])].slice(0, 15);
-      save();
-    }
     // keine Wiederholung in derselben Runde (sie soll nicht länger werden): das Wort kommt in die Wiederholung
     if (--sess.left[k] <= 0) { grade(st.w, false); save(); }
   }

@@ -1,0 +1,3660 @@
+{
+ "bilder": {
+  "ola:olá": "bilder/ola/ola.webp",
+  "ola:bom dia": "bilder/ola/bom-dia.webp",
+  "ola:boa tarde": "bilder/ola/boa-tarde.webp",
+  "ola:boa noite": "bilder/ola/boa-noite.webp",
+  "ola:adeus": "bilder/ola/adeus.webp",
+  "ola:até amanhã": "bilder/ola/ate-amanha.webp",
+  "ola:eu": "bilder/ola/eu.webp",
+  "ola:tu": "bilder/ola/tu.webp",
+  "ola:o nome": "bilder/ola/o-nome.webp",
+  "ola:a menina": "bilder/ola/a-menina.webp",
+  "ola:o menino": "bilder/ola/o-menino.webp",
+  "ola:o amigo": "bilder/ola/o-amigo.webp",
+  "ola:sim": "bilder/ola/sim.webp",
+  "ola:não": "bilder/ola/nao.webp",
+  "ola:por favor": "bilder/ola/por-favor.webp",
+  "ola:obrigado": "bilder/ola/obrigado.webp",
+  "ola:obrigada": "bilder/ola/obrigada.webp",
+  "ola:desculpa": "bilder/ola/desculpa.webp",
+  "ola:tudo bem?": "bilder/ola/tudo-bem.webp",
+  "ola:bem": "bilder/ola/bem.webp",
+  "ola:mal": "bilder/ola/mal.webp",
+  "ola:mais ou menos": "bilder/ola/mais-ou-menos.webp",
+  "ola:e tu?": "bilder/ola/e-tu.webp",
+  "ola:também": "bilder/ola/tambem.webp",
+  "ola:a casa": "bilder/ola/a-casa.webp",
+  "ola:a rua": "bilder/ola/a-rua.webp",
+  "ola:a cidade": "bilder/ola/a-cidade.webp",
+  "ola:Lisboa": "bilder/ola/lisboa.webp",
+  "ola:Portugal": "bilder/ola/portugal.webp",
+  "ola:falar": "bilder/ola/falar.webp",
+  "cores:o lápis de cor": "bilder/cores/o-lapis-de-cor.webp",
+  "cores:o pincel": "bilder/cores/o-pincel.webp",
+  "cores:a tinta": "bilder/cores/a-tinta.webp",
+  "cores:o papel": "bilder/cores/o-papel.webp",
+  "cores:o desenho": "bilder/cores/o-desenho.webp",
+  "cores:pintar": "bilder/cores/pintar.webp",
+  "cores:o arco-íris": "bilder/cores/o-arco-iris.webp",
+  "cores:claro": "bilder/cores/claro.webp",
+  "cores:escuro": "bilder/cores/escuro.webp",
+  "cores:dourado": "bilder/cores/dourado.webp",
+  "cores:prateado": "bilder/cores/prateado.webp",
+  "cores:colorido": "bilder/cores/colorido.webp",
+  "cores:o céu": "bilder/cores/o-ceu.webp",
+  "cores:o mar": "bilder/cores/o-mar.webp",
+  "cores:a relva": "bilder/cores/a-relva.webp",
+  "cores:a flor": "bilder/cores/a-flor.webp",
+  "cores:o sol": "bilder/cores/o-sol.webp",
+  "cores:a nuvem": "bilder/cores/a-nuvem.webp",
+  "numeros:contar": "bilder/numeros/contar.webp",
+  "numeros:quantos?": "bilder/numeros/quantos.webp",
+  "numeros:muitos": "bilder/numeros/muitos.webp",
+  "numeros:poucos": "bilder/numeros/poucos.webp",
+  "numeros:mais": "bilder/numeros/mais.webp",
+  "numeros:menos": "bilder/numeros/menos.webp",
+  "numeros:o número": "bilder/numeros/o-numero.webp",
+  "familia:a mãe": "bilder/familia/a-mae.webp",
+  "familia:o pai": "bilder/familia/o-pai.webp",
+  "familia:a irmã": "bilder/familia/a-irma.webp",
+  "familia:o irmão": "bilder/familia/o-irmao.webp",
+  "familia:os pais": "bilder/familia/os-pais.webp",
+  "familia:a família": "bilder/familia/a-familia.webp",
+  "familia:a avó": "bilder/familia/a-avo.webp",
+  "familia:o avô": "bilder/familia/o-avo.webp",
+  "familia:os avós": "bilder/familia/os-avos.webp",
+  "familia:o tio": "bilder/familia/o-tio.webp",
+  "familia:a tia": "bilder/familia/a-tia.webp",
+  "familia:o primo": "bilder/familia/o-primo.webp",
+  "familia:o bebé": "bilder/familia/o-bebe.webp",
+  "familia:a filha": "bilder/familia/a-filha.webp",
+  "familia:o filho": "bilder/familia/o-filho.webp",
+  "familia:grande": "bilder/familia/grande.webp",
+  "familia:pequeno": "bilder/familia/pequeno.webp",
+  "familia:juntos": "bilder/familia/juntos.webp",
+  "familia:gostar": "bilder/familia/gostar.webp",
+  "familia:o abraço": "bilder/familia/o-abraco.webp",
+  "familia:o beijinho": "bilder/familia/o-beijinho.webp",
+  "familia:ajudar": "bilder/familia/ajudar.webp",
+  "familia:brincar": "bilder/familia/brincar.webp",
+  "familia:rir": "bilder/familia/rir.webp",
+  "familia:o cão": "bilder/familia/o-cao.webp",
+  "familia:o peluche": "bilder/familia/o-peluche.webp",
+  "familia:o vizinho": "bilder/familia/o-vizinho.webp",
+  "familia:os anos": "bilder/familia/os-anos.webp",
+  "familia:morar": "bilder/familia/morar.webp",
+  "familia:querido": "bilder/familia/querido.webp",
+  "animais:o cão": "bilder/animais/o-cao.webp",
+  "animais:o gato": "bilder/animais/o-gato.webp",
+  "animais:o pássaro": "bilder/animais/o-passaro.webp",
+  "animais:o peixe": "bilder/animais/o-peixe.webp",
+  "animais:o coelho": "bilder/animais/o-coelho.webp",
+  "animais:o rato": "bilder/animais/o-rato.webp",
+  "animais:a vaca": "bilder/animais/a-vaca.webp",
+  "animais:o porco": "bilder/animais/o-porco.webp",
+  "animais:o cavalo": "bilder/animais/o-cavalo.webp",
+  "animais:a ovelha": "bilder/animais/a-ovelha.webp",
+  "animais:a cabra": "bilder/animais/a-cabra.webp",
+  "animais:o burro": "bilder/animais/o-burro.webp",
+  "animais:a galinha": "bilder/animais/a-galinha.webp",
+  "animais:o galo": "bilder/animais/o-galo.webp",
+  "animais:o pato": "bilder/animais/o-pato.webp",
+  "animais:o pintainho": "bilder/animais/o-pintainho.webp",
+  "animais:o ovo": "bilder/animais/o-ovo.webp",
+  "animais:o ganso": "bilder/animais/o-ganso.webp",
+  "animais:a quinta": "bilder/animais/a-quinta.webp",
+  "animais:o trator": "bilder/animais/o-trator.webp",
+  "animais:o campo": "bilder/animais/o-campo.webp",
+  "animais:a árvore": "bilder/animais/a-arvore.webp",
+  "animais:o lago": "bilder/animais/o-lago.webp",
+  "animais:o leite": "bilder/animais/o-leite.webp",
+  "animais:a abelha": "bilder/animais/a-abelha.webp",
+  "animais:a borboleta": "bilder/animais/a-borboleta.webp",
+  "animais:a formiga": "bilder/animais/a-formiga.webp",
+  "animais:o caracol": "bilder/animais/o-caracol.webp",
+  "animais:a rã": "bilder/animais/a-ra.webp",
+  "animais:a joaninha": "bilder/animais/a-joaninha.webp",
+  "comer:o pão": "bilder/comer/o-pao.webp",
+  "comer:o queijo": "bilder/comer/o-queijo.webp",
+  "comer:a manteiga": "bilder/comer/a-manteiga.webp",
+  "comer:o leite": "bilder/comer/o-leite.webp",
+  "comer:o sumo": "bilder/comer/o-sumo.webp",
+  "comer:o ovo": "bilder/comer/o-ovo.webp",
+  "comer:a sopa": "bilder/comer/a-sopa.webp",
+  "comer:o arroz": "bilder/comer/o-arroz.webp",
+  "comer:a massa": "bilder/comer/a-massa.webp",
+  "comer:o peixe": "bilder/comer/o-peixe.webp",
+  "comer:a carne": "bilder/comer/a-carne.webp",
+  "comer:as batatas": "bilder/comer/as-batatas.webp",
+  "comer:a água": "bilder/comer/a-agua.webp",
+  "comer:o chá": "bilder/comer/o-cha.webp",
+  "comer:o bolo": "bilder/comer/o-bolo.webp",
+  "comer:o gelado": "bilder/comer/o-gelado.webp",
+  "comer:o chocolate": "bilder/comer/o-chocolate.webp",
+  "comer:a bolacha": "bilder/comer/a-bolacha.webp",
+  "comer:o prato": "bilder/comer/o-prato.webp",
+  "comer:o copo": "bilder/comer/o-copo.webp",
+  "comer:o garfo": "bilder/comer/o-garfo.webp",
+  "comer:a faca": "bilder/comer/a-faca.webp",
+  "comer:a colher": "bilder/comer/a-colher.webp",
+  "comer:a chávena": "bilder/comer/a-chavena.webp",
+  "comer:comer": "bilder/comer/comer.webp",
+  "comer:beber": "bilder/comer/beber.webp",
+  "comer:ter fome": "bilder/comer/ter-fome.webp",
+  "comer:ter sede": "bilder/comer/ter-sede.webp",
+  "comer:quente": "bilder/comer/quente.webp",
+  "comer:frio": "bilder/comer/frio.webp",
+  "casa:a casa": "bilder/casa/a-casa.webp",
+  "casa:o quarto": "bilder/casa/o-quarto.webp",
+  "casa:a cozinha": "bilder/casa/a-cozinha.webp",
+  "casa:a sala": "bilder/casa/a-sala.webp",
+  "casa:a casa de banho": "bilder/casa/a-casa-de-banho.webp",
+  "casa:a varanda": "bilder/casa/a-varanda.webp",
+  "casa:a cama": "bilder/casa/a-cama.webp",
+  "casa:a mesa": "bilder/casa/a-mesa.webp",
+  "casa:a cadeira": "bilder/casa/a-cadeira.webp",
+  "casa:o armário": "bilder/casa/o-armario.webp",
+  "casa:o candeeiro": "bilder/casa/o-candeeiro.webp",
+  "casa:o espelho": "bilder/casa/o-espelho.webp",
+  "casa:a porta": "bilder/casa/a-porta.webp",
+  "casa:a janela": "bilder/casa/a-janela.webp",
+  "casa:a chave": "bilder/casa/a-chave.webp",
+  "casa:as escadas": "bilder/casa/as-escadas.webp",
+  "casa:a parede": "bilder/casa/a-parede.webp",
+  "casa:a campainha": "bilder/casa/a-campainha.webp",
+  "casa:a televisão": "bilder/casa/a-televisao.webp",
+  "casa:o telefone": "bilder/casa/o-telefone.webp",
+  "casa:o relógio": "bilder/casa/o-relogio.webp",
+  "casa:o livro": "bilder/casa/o-livro.webp",
+  "casa:o brinquedo": "bilder/casa/o-brinquedo.webp",
+  "casa:a caixa": "bilder/casa/a-caixa.webp",
+  "casa:dormir": "bilder/casa/dormir.webp",
+  "casa:acordar": "bilder/casa/acordar.webp",
+  "casa:lavar": "bilder/casa/lavar.webp",
+  "casa:arrumar": "bilder/casa/arrumar.webp",
+  "casa:procurar": "bilder/casa/procurar.webp",
+  "casa:encontrar": "bilder/casa/encontrar.webp",
+  "roupa:a t-shirt": "bilder/roupa/a-t-shirt.webp",
+  "roupa:as calças": "bilder/roupa/as-calcas.webp",
+  "roupa:o vestido": "bilder/roupa/o-vestido.webp",
+  "roupa:os calções": "bilder/roupa/os-calcoes.webp",
+  "roupa:as meias": "bilder/roupa/as-meias.webp",
+  "roupa:os sapatos": "bilder/roupa/os-sapatos.webp",
+  "roupa:o casaco": "bilder/roupa/o-casaco.webp",
+  "roupa:a camisola": "bilder/roupa/a-camisola.webp",
+  "roupa:o cachecol": "bilder/roupa/o-cachecol.webp",
+  "roupa:as luvas": "bilder/roupa/as-luvas.webp",
+  "roupa:o chapéu": "bilder/roupa/o-chapeu.webp",
+  "roupa:as botas": "bilder/roupa/as-botas.webp",
+  "roupa:os ténis": "bilder/roupa/os-tenis.webp",
+  "roupa:os óculos": "bilder/roupa/os-oculos.webp",
+  "roupa:o guarda-chuva": "bilder/roupa/o-guarda-chuva.webp",
+  "roupa:o boné": "bilder/roupa/o-bone.webp",
+  "roupa:a mochila": "bilder/roupa/a-mochila.webp",
+  "roupa:o pijama": "bilder/roupa/o-pijama.webp",
+  "roupa:vestir": "bilder/roupa/vestir.webp",
+  "roupa:limpo": "bilder/roupa/limpo.webp",
+  "roupa:sujo": "bilder/roupa/sujo.webp",
+  "roupa:novo": "bilder/roupa/novo.webp",
+  "roupa:velho": "bilder/roupa/velho.webp",
+  "roupa:bonito": "bilder/roupa/bonito.webp",
+  "roupa:os óculos de sol": "bilder/roupa/os-oculos-de-sol.webp",
+  "roupa:o fato de banho": "bilder/roupa/o-fato-de-banho.webp",
+  "roupa:os chinelos": "bilder/roupa/os-chinelos.webp",
+  "roupa:o lenço": "bilder/roupa/o-lenco.webp",
+  "roupa:o botão": "bilder/roupa/o-botao.webp",
+  "roupa:a roupa": "bilder/roupa/a-roupa.webp",
+  "corpo:a cabeça": "bilder/corpo/a-cabeca.webp",
+  "corpo:o cabelo": "bilder/corpo/o-cabelo.webp",
+  "corpo:os olhos": "bilder/corpo/os-olhos.webp",
+  "corpo:o nariz": "bilder/corpo/o-nariz.webp",
+  "corpo:a boca": "bilder/corpo/a-boca.webp",
+  "corpo:as orelhas": "bilder/corpo/as-orelhas.webp",
+  "corpo:o braço": "bilder/corpo/o-braco.webp",
+  "corpo:a mão": "bilder/corpo/a-mao.webp",
+  "corpo:o dedo": "bilder/corpo/o-dedo.webp",
+  "corpo:a perna": "bilder/corpo/a-perna.webp",
+  "corpo:o pé": "bilder/corpo/o-pe.webp",
+  "corpo:a barriga": "bilder/corpo/a-barriga.webp",
+  "corpo:os dentes": "bilder/corpo/os-dentes.webp",
+  "corpo:a língua": "bilder/corpo/a-lingua.webp",
+  "corpo:a cara": "bilder/corpo/a-cara.webp",
+  "corpo:o coração": "bilder/corpo/o-coracao.webp",
+  "corpo:o joelho": "bilder/corpo/o-joelho.webp",
+  "corpo:o ombro": "bilder/corpo/o-ombro.webp",
+  "corpo:saltar": "bilder/corpo/saltar.webp",
+  "corpo:correr": "bilder/corpo/correr.webp",
+  "corpo:dançar": "bilder/corpo/dancar.webp",
+  "corpo:bater palmas": "bilder/corpo/bater-palmas.webp",
+  "corpo:andar": "bilder/corpo/andar.webp",
+  "corpo:parar": "bilder/corpo/parar.webp",
+  "corpo:doer": "bilder/corpo/doer.webp",
+  "corpo:o penso": "bilder/corpo/o-penso.webp",
+  "corpo:o médico": "bilder/corpo/o-medico.webp",
+  "corpo:doente": "bilder/corpo/doente.webp",
+  "corpo:forte": "bilder/corpo/forte.webp",
+  "corpo:cansado": "bilder/corpo/cansado.webp",
+  "creche:a creche": "bilder/creche/a-creche.webp",
+  "creche:o jardim de infância": "bilder/creche/o-jardim-de-infancia.webp",
+  "creche:a educadora": "bilder/creche/a-educadora.webp",
+  "creche:o bebé": "bilder/creche/o-bebe.webp",
+  "creche:o amigo": "bilder/creche/o-amigo.webp",
+  "creche:a amiga": "bilder/creche/a-amiga.webp",
+  "creche:a bola": "bilder/creche/a-bola.webp",
+  "creche:a boneca": "bilder/creche/a-boneca.webp",
+  "creche:o carrinho": "bilder/creche/o-carrinho.webp",
+  "creche:os blocos": "bilder/creche/os-blocos.webp",
+  "creche:o puzzle": "bilder/creche/o-puzzle.webp",
+  "creche:o escorrega": "bilder/creche/o-escorrega.webp",
+  "creche:o baloiço": "bilder/creche/o-baloico.webp",
+  "creche:a areia": "bilder/creche/a-areia.webp",
+  "creche:o balde": "bilder/creche/o-balde.webp",
+  "creche:a pá": "bilder/creche/a-pa.webp",
+  "creche:o triciclo": "bilder/creche/o-triciclo.webp",
+  "creche:brincar": "bilder/creche/brincar.webp",
+  "creche:cantar": "bilder/creche/cantar.webp",
+  "creche:pintar": "bilder/creche/pintar.webp",
+  "creche:a história": "bilder/creche/a-historia.webp",
+  "creche:a sesta": "bilder/creche/a-sesta.webp",
+  "creche:partilhar": "bilder/creche/partilhar.webp",
+  "creche:o lanche": "bilder/creche/o-lanche.webp",
+  "creche:a fruta": "bilder/creche/a-fruta.webp",
+  "creche:o babete": "bilder/creche/o-babete.webp",
+  "creche:lavar as mãos": "bilder/creche/lavar-as-maos.webp",
+  "creche:a roda": "bilder/creche/a-roda.webp",
+  "creche:ir buscar": "bilder/creche/ir-buscar.webp",
+  "creche:os brinquedos": "bilder/creche/os-brinquedos.webp",
+  "escola:a escola": "bilder/escola/a-escola.webp",
+  "escola:a professora": "bilder/escola/a-professora.webp",
+  "escola:o aluno": "bilder/escola/o-aluno.webp",
+  "escola:a turma": "bilder/escola/a-turma.webp",
+  "escola:o recreio": "bilder/escola/o-recreio.webp",
+  "escola:o quadro": "bilder/escola/o-quadro.webp",
+  "escola:o livro": "bilder/escola/o-livro.webp",
+  "escola:o caderno": "bilder/escola/o-caderno.webp",
+  "escola:o lápis": "bilder/escola/o-lapis.webp",
+  "escola:a caneta": "bilder/escola/a-caneta.webp",
+  "escola:a borracha": "bilder/escola/a-borracha.webp",
+  "escola:a mochila": "bilder/escola/a-mochila.webp",
+  "escola:a tesoura": "bilder/escola/a-tesoura.webp",
+  "escola:a régua": "bilder/escola/a-regua.webp",
+  "escola:a cola": "bilder/escola/a-cola.webp",
+  "escola:o estojo": "bilder/escola/o-estojo.webp",
+  "escola:o papel": "bilder/escola/o-papel.webp",
+  "escola:o computador": "bilder/escola/o-computador.webp",
+  "escola:ler": "bilder/escola/ler.webp",
+  "escola:escrever": "bilder/escola/escrever.webp",
+  "escola:fazer contas": "bilder/escola/fazer-contas.webp",
+  "escola:aprender": "bilder/escola/aprender.webp",
+  "escola:perguntar": "bilder/escola/perguntar.webp",
+  "escola:responder": "bilder/escola/responder.webp",
+  "escola:a letra": "bilder/escola/a-letra.webp",
+  "escola:a palavra": "bilder/escola/a-palavra.webp",
+  "escola:o trabalho de casa": "bilder/escola/o-trabalho-de-casa.webp",
+  "escola:certo": "bilder/escola/certo.webp",
+  "escola:errado": "bilder/escola/errado.webp",
+  "escola:fácil": "bilder/escola/facil.webp",
+  "estacoes:a primavera": "bilder/estacoes/a-primavera.webp",
+  "estacoes:o verão": "bilder/estacoes/o-verao.webp",
+  "estacoes:o outono": "bilder/estacoes/o-outono.webp",
+  "estacoes:o inverno": "bilder/estacoes/o-inverno.webp",
+  "estacoes:a estação": "bilder/estacoes/a-estacao.webp",
+  "estacoes:o ano": "bilder/estacoes/o-ano.webp",
+  "estacoes:o sol": "bilder/estacoes/o-sol.webp",
+  "estacoes:a chuva": "bilder/estacoes/a-chuva.webp",
+  "estacoes:a neve": "bilder/estacoes/a-neve.webp",
+  "estacoes:o vento": "bilder/estacoes/o-vento.webp",
+  "estacoes:a nuvem": "bilder/estacoes/a-nuvem.webp",
+  "estacoes:a trovoada": "bilder/estacoes/a-trovoada.webp",
+  "estacoes:quente": "bilder/estacoes/quente.webp",
+  "estacoes:frio": "bilder/estacoes/frio.webp",
+  "estacoes:molhado": "bilder/estacoes/molhado.webp",
+  "estacoes:seco": "bilder/estacoes/seco.webp",
+  "estacoes:o nevoeiro": "bilder/estacoes/o-nevoeiro.webp",
+  "estacoes:o gelo": "bilder/estacoes/o-gelo.webp",
+  "estacoes:a flor": "bilder/estacoes/a-flor.webp",
+  "estacoes:a folha": "bilder/estacoes/a-folha.webp",
+  "estacoes:a árvore": "bilder/estacoes/a-arvore.webp",
+  "estacoes:a castanha": "bilder/estacoes/a-castanha.webp",
+  "estacoes:o cogumelo": "bilder/estacoes/o-cogumelo.webp",
+  "estacoes:a semente": "bilder/estacoes/a-semente.webp",
+  "estacoes:a temperatura": "bilder/estacoes/a-temperatura.webp",
+  "estacoes:o tempo": "bilder/estacoes/o-tempo.webp",
+  "estacoes:hoje": "bilder/estacoes/hoje.webp",
+  "estacoes:amanhã": "bilder/estacoes/amanha.webp",
+  "estacoes:a lua": "bilder/estacoes/a-lua.webp",
+  "estacoes:a estrela": "bilder/estacoes/a-estrela.webp",
+  "semana:a semana": "bilder/semana/a-semana.webp",
+  "semana:sábado": "bilder/semana/sabado.webp",
+  "semana:domingo": "bilder/semana/domingo.webp",
+  "semana:o fim de semana": "bilder/semana/o-fim-de-semana.webp",
+  "semana:hoje": "bilder/semana/hoje.webp",
+  "semana:amanhã": "bilder/semana/amanha.webp",
+  "semana:ontem": "bilder/semana/ontem.webp",
+  "semana:a manhã": "bilder/semana/a-manha.webp",
+  "semana:a tarde": "bilder/semana/a-tarde.webp",
+  "semana:a noite": "bilder/semana/a-noite.webp",
+  "semana:o dia": "bilder/semana/o-dia.webp",
+  "semana:a hora": "bilder/semana/a-hora.webp",
+  "semana:o meio-dia": "bilder/semana/o-meio-dia.webp",
+  "semana:o pequeno-almoço": "bilder/semana/o-pequeno-almoco.webp",
+  "semana:o almoço": "bilder/semana/o-almoco.webp",
+  "semana:o lanche": "bilder/semana/o-lanche.webp",
+  "semana:o jantar": "bilder/semana/o-jantar.webp",
+  "semana:acordar": "bilder/semana/acordar.webp",
+  "semana:deitar-se": "bilder/semana/deitar-se.webp",
+  "semana:sempre": "bilder/semana/sempre.webp",
+  "semana:nunca": "bilder/semana/nunca.webp",
+  "semana:às vezes": "bilder/semana/as-vezes.webp",
+  "semana:antes": "bilder/semana/antes.webp",
+  "semana:depois": "bilder/semana/depois.webp",
+  "semana:agora": "bilder/semana/agora.webp",
+  "sentimentos:feliz": "bilder/sentimentos/feliz.webp",
+  "sentimentos:triste": "bilder/sentimentos/triste.webp",
+  "sentimentos:zangado": "bilder/sentimentos/zangado.webp",
+  "sentimentos:com ciúmes": "bilder/sentimentos/com-ciumes.webp",
+  "sentimentos:assustado": "bilder/sentimentos/assustado.webp",
+  "sentimentos:surpreendido": "bilder/sentimentos/surpreendido.webp",
+  "sentimentos:contente": "bilder/sentimentos/contente.webp",
+  "sentimentos:nervoso": "bilder/sentimentos/nervoso.webp",
+  "sentimentos:envergonhado": "bilder/sentimentos/envergonhado.webp",
+  "sentimentos:orgulhoso": "bilder/sentimentos/orgulhoso.webp",
+  "sentimentos:aborrecido": "bilder/sentimentos/aborrecido.webp",
+  "sentimentos:curioso": "bilder/sentimentos/curioso.webp",
+  "sentimentos:rir": "bilder/sentimentos/rir.webp",
+  "sentimentos:chorar": "bilder/sentimentos/chorar.webp",
+  "sentimentos:gritar": "bilder/sentimentos/gritar.webp",
+  "sentimentos:sorrir": "bilder/sentimentos/sorrir.webp",
+  "sentimentos:a lágrima": "bilder/sentimentos/a-lagrima.webp",
+  "sentimentos:o medo": "bilder/sentimentos/o-medo.webp",
+  "sentimentos:preferir": "bilder/sentimentos/preferir.webp",
+  "sentimentos:não gostar": "bilder/sentimentos/nao-gostar.webp",
+  "sentimentos:adorar": "bilder/sentimentos/adorar.webp",
+  "sentimentos:querer": "bilder/sentimentos/querer.webp",
+  "sentimentos:precisar": "bilder/sentimentos/precisar.webp",
+  "sentimentos:pedir": "bilder/sentimentos/pedir.webp",
+  "sentimentos:sozinho": "bilder/sentimentos/sozinho.webp",
+  "sentimentos:a amizade": "bilder/sentimentos/a-amizade.webp",
+  "sentimentos:a saudade": "bilder/sentimentos/a-saudade.webp",
+  "sentimentos:calmo": "bilder/sentimentos/calmo.webp",
+  "sentimentos:a surpresa": "bilder/sentimentos/a-surpresa.webp",
+  "sentimentos:a melhor amiga": "bilder/sentimentos/a-melhor-amiga.webp",
+  "parque:o parque": "bilder/parque/o-parque.webp",
+  "parque:o banco": "bilder/parque/o-banco.webp",
+  "parque:a fonte": "bilder/parque/a-fonte.webp",
+  "parque:o caminho": "bilder/parque/o-caminho.webp",
+  "parque:a estátua": "bilder/parque/a-estatua.webp",
+  "parque:o quiosque": "bilder/parque/o-quiosque.webp",
+  "parque:o pavão": "bilder/parque/o-pavao.webp",
+  "parque:o pombo": "bilder/parque/o-pombo.webp",
+  "parque:a gaivota": "bilder/parque/a-gaivota.webp",
+  "parque:o cisne": "bilder/parque/o-cisne.webp",
+  "parque:a tartaruga": "bilder/parque/a-tartaruga.webp",
+  "parque:o peixe-vermelho": "bilder/parque/o-peixe-vermelho.webp",
+  "parque:a bicicleta": "bilder/parque/a-bicicleta.webp",
+  "parque:a trotinete": "bilder/parque/a-trotinete.webp",
+  "parque:o skate": "bilder/parque/o-skate.webp",
+  "parque:os patins": "bilder/parque/os-patins.webp",
+  "parque:o capacete": "bilder/parque/o-capacete.webp",
+  "parque:o trepa-trepa": "bilder/parque/o-trepa-trepa.webp",
+  "parque:atrás de": "bilder/parque/atras-de.webp",
+  "parque:debaixo de": "bilder/parque/debaixo-de.webp",
+  "parque:ao lado de": "bilder/parque/ao-lado-de.webp",
+  "parque:em cima de": "bilder/parque/em-cima-de.webp",
+  "parque:esconder-se": "bilder/parque/esconder-se.webp",
+  "parque:apanhar": "bilder/parque/apanhar.webp",
+  "parque:o piquenique": "bilder/parque/o-piquenique.webp",
+  "parque:a sombra": "bilder/parque/a-sombra.webp",
+  "parque:a manta": "bilder/parque/a-manta.webp",
+  "parque:a limonada": "bilder/parque/a-limonada.webp",
+  "parque:a garrafa": "bilder/parque/a-garrafa.webp",
+  "parque:o lixo": "bilder/parque/o-lixo.webp",
+  "eletrico:o elétrico": "bilder/eletrico/o-eletrico.webp",
+  "eletrico:o autocarro": "bilder/eletrico/o-autocarro.webp",
+  "eletrico:o metro": "bilder/eletrico/o-metro.webp",
+  "eletrico:o comboio": "bilder/eletrico/o-comboio.webp",
+  "eletrico:o carro": "bilder/eletrico/o-carro.webp",
+  "eletrico:o táxi": "bilder/eletrico/o-taxi.webp",
+  "eletrico:o bilhete": "bilder/eletrico/o-bilhete.webp",
+  "eletrico:a paragem": "bilder/eletrico/a-paragem.webp",
+  "eletrico:a condutora": "bilder/eletrico/a-condutora.webp",
+  "eletrico:o lugar": "bilder/eletrico/o-lugar.webp",
+  "eletrico:o sino": "bilder/eletrico/o-sino.webp",
+  "eletrico:a viagem": "bilder/eletrico/a-viagem.webp",
+  "eletrico:a colina": "bilder/eletrico/a-colina.webp",
+  "eletrico:o castelo": "bilder/eletrico/o-castelo.webp",
+  "eletrico:o rio": "bilder/eletrico/o-rio.webp",
+  "eletrico:a ponte": "bilder/eletrico/a-ponte.webp",
+  "eletrico:a igreja": "bilder/eletrico/a-igreja.webp",
+  "eletrico:o miradouro": "bilder/eletrico/o-miradouro.webp",
+  "eletrico:travar": "bilder/eletrico/travar.webp",
+  "eletrico:descer": "bilder/eletrico/descer.webp",
+  "eletrico:entrar": "bilder/eletrico/entrar.webp",
+  "eletrico:sair": "bilder/eletrico/sair.webp",
+  "eletrico:esperar": "bilder/eletrico/esperar.webp",
+  "eletrico:segurar-se": "bilder/eletrico/segurar-se.webp",
+  "eletrico:à esquerda": "bilder/eletrico/a-esquerda.webp",
+  "eletrico:à direita": "bilder/eletrico/a-direita.webp",
+  "eletrico:em frente": "bilder/eletrico/em-frente.webp",
+  "eletrico:perto": "bilder/eletrico/perto.webp",
+  "eletrico:longe": "bilder/eletrico/longe.webp",
+  "eletrico:o mapa": "bilder/eletrico/o-mapa.webp",
+  "mercado:a maçã": "bilder/mercado/a-maca.webp",
+  "mercado:a banana": "bilder/mercado/a-banana.webp",
+  "mercado:a laranja": "bilder/mercado/a-laranja.webp",
+  "mercado:o morango": "bilder/mercado/o-morango.webp",
+  "mercado:as uvas": "bilder/mercado/as-uvas.webp",
+  "mercado:a pera": "bilder/mercado/a-pera.webp",
+  "mercado:a melancia": "bilder/mercado/a-melancia.webp",
+  "mercado:o limão": "bilder/mercado/o-limao.webp",
+  "mercado:a cereja": "bilder/mercado/a-cereja.webp",
+  "mercado:o pêssego": "bilder/mercado/o-pessego.webp",
+  "mercado:o ananás": "bilder/mercado/o-ananas.webp",
+  "mercado:o melão": "bilder/mercado/o-melao.webp",
+  "mercado:a cenoura": "bilder/mercado/a-cenoura.webp",
+  "mercado:o tomate": "bilder/mercado/o-tomate.webp",
+  "mercado:a batata": "bilder/mercado/a-batata.webp",
+  "mercado:a cebola": "bilder/mercado/a-cebola.webp",
+  "mercado:a alface": "bilder/mercado/a-alface.webp",
+  "mercado:o pepino": "bilder/mercado/o-pepino.webp",
+  "mercado:o mercado": "bilder/mercado/o-mercado.webp",
+  "mercado:o cesto": "bilder/mercado/o-cesto.webp",
+  "mercado:o saco": "bilder/mercado/o-saco.webp",
+  "mercado:o dinheiro": "bilder/mercado/o-dinheiro.webp",
+  "mercado:o quilo": "bilder/mercado/o-quilo.webp",
+  "mercado:a banca": "bilder/mercado/a-banca.webp",
+  "mercado:comprar": "bilder/mercado/comprar.webp",
+  "mercado:vender": "bilder/mercado/vender.webp",
+  "mercado:quanto custa?": "bilder/mercado/quanto-custa.webp",
+  "mercado:barato": "bilder/mercado/barato.webp",
+  "mercado:caro": "bilder/mercado/caro.webp",
+  "mercado:fresco": "bilder/mercado/fresco.webp",
+  "pastelaria:a pastelaria": "bilder/pastelaria/a-pastelaria.webp",
+  "pastelaria:o pastel de nata": "bilder/pastelaria/o-pastel-de-nata.webp",
+  "pastelaria:o croissant": "bilder/pastelaria/o-croissant.webp",
+  "pastelaria:a torrada": "bilder/pastelaria/a-torrada.webp",
+  "pastelaria:o queque": "bilder/pastelaria/o-queque.webp",
+  "pastelaria:o bolo de arroz": "bilder/pastelaria/o-bolo-de-arroz.webp",
+  "pastelaria:o café": "bilder/pastelaria/o-cafe.webp",
+  "pastelaria:o galão": "bilder/pastelaria/o-galao.webp",
+  "pastelaria:a meia de leite": "bilder/pastelaria/a-meia-de-leite.webp",
+  "pastelaria:o sumo de laranja": "bilder/pastelaria/o-sumo-de-laranja.webp",
+  "pastelaria:o chocolate quente": "bilder/pastelaria/o-chocolate-quente.webp",
+  "pastelaria:a palhinha": "bilder/pastelaria/a-palhinha.webp",
+  "pastelaria:o empregado": "bilder/pastelaria/o-empregado.webp",
+  "pastelaria:o balcão": "bilder/pastelaria/o-balcao.webp",
+  "pastelaria:a montra": "bilder/pastelaria/a-montra.webp",
+  "pastelaria:o pão de ló": "bilder/pastelaria/o-pao-de-lo.webp",
+  "pastelaria:o guardanapo": "bilder/pastelaria/o-guardanapo.webp",
+  "pastelaria:a conta": "bilder/pastelaria/a-conta.webp",
+  "pastelaria:queria": "bilder/pastelaria/queria.webp",
+  "pastelaria:mais um": "bilder/pastelaria/mais-um.webp",
+  "pastelaria:mais uma": "bilder/pastelaria/mais-uma.webp",
+  "pastelaria:é tudo": "bilder/pastelaria/e-tudo.webp",
+  "pastelaria:o açúcar": "bilder/pastelaria/o-acucar.webp",
+  "pastelaria:a canela": "bilder/pastelaria/a-canela.webp",
+  "pastelaria:pagar": "bilder/pastelaria/pagar.webp",
+  "pastelaria:o euro": "bilder/pastelaria/o-euro.webp",
+  "pastelaria:o troco": "bilder/pastelaria/o-troco.webp",
+  "pastelaria:provar": "bilder/pastelaria/provar.webp",
+  "pastelaria:cheirar": "bilder/pastelaria/cheirar.webp",
+  "pastelaria:delicioso": "bilder/pastelaria/delicioso.webp",
+  "musica:a música": "bilder/musica/a-musica.webp",
+  "musica:a canção": "bilder/musica/a-cancao.webp",
+  "musica:a guitarra": "bilder/musica/a-guitarra.webp",
+  "musica:o cavaquinho": "bilder/musica/o-cavaquinho.webp",
+  "musica:o piano": "bilder/musica/o-piano.webp",
+  "musica:o tambor": "bilder/musica/o-tambor.webp",
+  "musica:a flauta": "bilder/musica/a-flauta.webp",
+  "musica:o violino": "bilder/musica/o-violino.webp",
+  "musica:o trompete": "bilder/musica/o-trompete.webp",
+  "musica:o acordeão": "bilder/musica/o-acordeao.webp",
+  "musica:as maracas": "bilder/musica/as-maracas.webp",
+  "musica:o microfone": "bilder/musica/o-microfone.webp",
+  "musica:tocar": "bilder/musica/tocar.webp",
+  "musica:ouvir": "bilder/musica/ouvir.webp",
+  "musica:assobiar": "bilder/musica/assobiar.webp",
+  "musica:alto": "bilder/musica/alto.webp",
+  "musica:o ritmo": "bilder/musica/o-ritmo.webp",
+  "musica:o silêncio": "bilder/musica/o-silencio.webp",
+  "musica:o fado": "bilder/musica/o-fado.webp",
+  "musica:o concerto": "bilder/musica/o-concerto.webp",
+  "musica:o palco": "bilder/musica/o-palco.webp",
+  "musica:o coro": "bilder/musica/o-coro.webp",
+  "musica:a nota": "bilder/musica/a-nota.webp",
+  "futebol:o futebol": "bilder/futebol/o-futebol.webp",
+  "futebol:a baliza": "bilder/futebol/a-baliza.webp",
+  "futebol:o golo": "bilder/futebol/o-golo.webp",
+  "futebol:a equipa": "bilder/futebol/a-equipa.webp",
+  "futebol:o jogador": "bilder/futebol/o-jogador.webp",
+  "futebol:o árbitro": "bilder/futebol/o-arbitro.webp",
+  "futebol:o apito": "bilder/futebol/o-apito.webp",
+  "futebol:as chuteiras": "bilder/futebol/as-chuteiras.webp",
+  "futebol:o guarda-redes": "bilder/futebol/o-guarda-redes.webp",
+  "futebol:chutar": "bilder/futebol/chutar.webp",
+  "futebol:passar": "bilder/futebol/passar.webp",
+  "futebol:marcar": "bilder/futebol/marcar.webp",
+  "futebol:defender": "bilder/futebol/defender.webp",
+  "futebol:treinar": "bilder/futebol/treinar.webp",
+  "futebol:ganhar": "bilder/futebol/ganhar.webp",
+  "futebol:perder": "bilder/futebol/perder.webp",
+  "futebol:empatar": "bilder/futebol/empatar.webp",
+  "futebol:o jogo": "bilder/futebol/o-jogo.webp",
+  "futebol:a taça": "bilder/futebol/a-taca.webp",
+  "futebol:nadar": "bilder/futebol/nadar.webp",
+  "futebol:andar de bicicleta": "bilder/futebol/andar-de-bicicleta.webp",
+  "futebol:a ginástica": "bilder/futebol/a-ginastica.webp",
+  "futebol:o surf": "bilder/futebol/o-surf.webp",
+  "futebol:a corrida": "bilder/futebol/a-corrida.webp",
+  "futebol:o campo de futebol": "bilder/futebol/o-campo-de-futebol.webp",
+  "futebol:a camisola de futebol": "bilder/futebol/a-camisola-de-futebol.webp",
+  "futebol:a jogadora": "bilder/futebol/a-jogadora.webp",
+  "futebol:o treino": "bilder/futebol/o-treino.webp",
+  "musica:baixo": "bilder/musica/baixo.webp",
+  "musica:rápido": "bilder/musica/rapido.webp",
+  "musica:devagar": "bilder/musica/devagar.webp",
+  "musica:a voz": "bilder/musica/a-voz.webp",
+  "praia:a praia": "bilder/praia/a-praia.webp",
+  "praia:a onda": "bilder/praia/a-onda.webp",
+  "praia:a concha": "bilder/praia/a-concha.webp",
+  "praia:a toalha": "bilder/praia/a-toalha.webp",
+  "praia:o chapéu de sol": "bilder/praia/o-chapeu-de-sol.webp",
+  "praia:o protetor solar": "bilder/praia/o-protetor-solar.webp",
+  "praia:os calções de banho": "bilder/praia/os-calcoes-de-banho.webp",
+  "praia:a geleira": "bilder/praia/a-geleira.webp",
+  "praia:as braçadeiras": "bilder/praia/as-bracadeiras.webp",
+  "praia:o castelo de areia": "bilder/praia/o-castelo-de-areia.webp",
+  "praia:a bola de praia": "bilder/praia/a-bola-de-praia.webp",
+  "praia:a boia": "bilder/praia/a-boia.webp",
+  "praia:o barco": "bilder/praia/o-barco.webp",
+  "praia:mergulhar": "bilder/praia/mergulhar.webp",
+  "praia:cavar": "bilder/praia/cavar.webp",
+  "praia:construir": "bilder/praia/construir.webp",
+  "praia:salpicar": "bilder/praia/salpicar.webp",
+  "praia:descansar": "bilder/praia/descansar.webp",
+  "praia:o caranguejo": "bilder/praia/o-caranguejo.webp",
+  "praia:a estrela-do-mar": "bilder/praia/a-estrela-do-mar.webp",
+  "praia:a alforreca": "bilder/praia/a-alforreca.webp",
+  "praia:o nadador-salvador": "bilder/praia/o-nadador-salvador.webp",
+  "praia:a nadadora-salvadora": "bilder/praia/a-nadadora-salvadora.webp",
+  "praia:a bola de Berlim": "bilder/praia/a-bola-de-berlim.webp",
+  "zoo:o leão": "bilder/zoo/o-leao.webp",
+  "zoo:o tigre": "bilder/zoo/o-tigre.webp",
+  "zoo:o elefante": "bilder/zoo/o-elefante.webp",
+  "zoo:a girafa": "bilder/zoo/a-girafa.webp",
+  "zoo:a zebra": "bilder/zoo/a-zebra.webp",
+  "zoo:o hipopótamo": "bilder/zoo/o-hipopotamo.webp",
+  "zoo:o macaco": "bilder/zoo/o-macaco.webp",
+  "zoo:o orangotango": "bilder/zoo/o-orangotango.webp",
+  "zoo:o gorila": "bilder/zoo/o-gorila.webp",
+  "zoo:o panda": "bilder/zoo/o-panda.webp",
+  "zoo:o urso": "bilder/zoo/o-urso.webp",
+  "zoo:o coala": "bilder/zoo/o-coala.webp",
+  "zoo:o crocodilo": "bilder/zoo/o-crocodilo.webp",
+  "zoo:a cobra": "bilder/zoo/a-cobra.webp",
+  "zoo:o papagaio": "bilder/zoo/o-papagaio.webp",
+  "zoo:o flamingo": "bilder/zoo/o-flamingo.webp",
+  "zoo:o pinguim": "bilder/zoo/o-pinguim.webp",
+  "zoo:o jardim zoológico": "bilder/zoo/o-jardim-zoologico.webp",
+  "zoo:a jaula": "bilder/zoo/a-jaula.webp",
+  "zoo:o tratador": "bilder/zoo/o-tratador.webp",
+  "zoo:a tratadora": "bilder/zoo/a-tratadora.webp",
+  "zoo:o teleférico": "bilder/zoo/o-teleferico.webp",
+  "zoo:maior": "bilder/zoo/maior.webp",
+  "zoo:comprido": "bilder/zoo/comprido.webp",
+  "zoo:lento": "bilder/zoo/lento.webp",
+  "zoo:perigoso": "bilder/zoo/perigoso.webp",
+  "zoo:fofo": "bilder/zoo/fofo.webp",
+  "oceanario:o aquário": "bilder/oceanario/o-aquario.webp",
+  "oceanario:o vidro": "bilder/oceanario/o-vidro.webp",
+  "oceanario:o tubarão": "bilder/oceanario/o-tubarao.webp",
+  "oceanario:a raia": "bilder/oceanario/a-raia.webp",
+  "oceanario:o peixe-lua": "bilder/oceanario/o-peixe-lua.webp",
+  "oceanario:a barbatana": "bilder/oceanario/a-barbatana.webp",
+  "oceanario:o peixe-palhaço": "bilder/oceanario/o-peixe-palhaco.webp",
+  "oceanario:o cavalo-marinho": "bilder/oceanario/o-cavalo-marinho.webp",
+  "oceanario:o coral": "bilder/oceanario/o-coral.webp",
+  "oceanario:a alga": "bilder/oceanario/a-alga.webp",
+  "oceanario:o camarão": "bilder/oceanario/o-camarao.webp",
+  "oceanario:a moreia": "bilder/oceanario/a-moreia.webp",
+  "oceanario:a lontra": "bilder/oceanario/a-lontra.webp",
+  "oceanario:a pedra": "bilder/oceanario/a-pedra.webp",
+  "oceanario:a bolha": "bilder/oceanario/a-bolha.webp",
+  "oceanario:o polvo": "bilder/oceanario/o-polvo.webp",
+  "oceanario:o tentáculo": "bilder/oceanario/o-tentaculo.webp",
+  "oceanario:o mergulhador": "bilder/oceanario/o-mergulhador.webp",
+  "oceanario:a mergulhadora": "bilder/oceanario/a-mergulhadora.webp",
+  "oceanario:o oceano": "bilder/oceanario/o-oceano.webp",
+  "oceanario:o fundo do mar": "bilder/oceanario/o-fundo-do-mar.webp",
+  "oceanario:o animal": "bilder/oceanario/o-animal.webp",
+  "oceanario:enorme": "bilder/oceanario/enorme.webp",
+  "oceanario:flutuar": "bilder/oceanario/flutuar.webp",
+  "oceanario:brilhar": "bilder/oceanario/brilhar.webp",
+  "oceanario:observar": "bilder/oceanario/observar.webp",
+  "oceanario:alimentar": "bilder/oceanario/alimentar.webp",
+  "oceanario:respirar": "bilder/oceanario/respirar.webp",
+  "aniversario:o aniversário": "bilder/aniversario/o-aniversario.webp",
+  "aniversario:a festa": "bilder/aniversario/a-festa.webp",
+  "aniversario:o balão": "bilder/aniversario/o-balao.webp",
+  "aniversario:as bandeirinhas": "bilder/aniversario/as-bandeirinhas.webp",
+  "aniversario:o convite": "bilder/aniversario/o-convite.webp",
+  "aniversario:decorar": "bilder/aniversario/decorar.webp",
+  "aniversario:o convidado": "bilder/aniversario/o-convidado.webp",
+  "aniversario:a convidada": "bilder/aniversario/a-convidada.webp",
+  "aniversario:a prenda": "bilder/aniversario/a-prenda.webp",
+  "aniversario:o laço": "bilder/aniversario/o-laco.webp",
+  "aniversario:embrulhar": "bilder/aniversario/embrulhar.webp",
+  "aniversario:abrir": "bilder/aniversario/abrir.webp",
+  "aniversario:as batatas fritas": "bilder/aniversario/as-batatas-fritas.webp",
+  "aniversario:a piza": "bilder/aniversario/a-piza.webp",
+  "aniversario:as gomas": "bilder/aniversario/as-gomas.webp",
+  "aniversario:as pipocas": "bilder/aniversario/as-pipocas.webp",
+  "aniversario:o bolo de aniversário": "bilder/aniversario/o-bolo-de-aniversario.webp",
+  "aniversario:a fatia": "bilder/aniversario/a-fatia.webp",
+  "aniversario:a vela": "bilder/aniversario/a-vela.webp",
+  "aniversario:soprar": "bilder/aniversario/soprar.webp",
+  "aniversario:o desejo": "bilder/aniversario/o-desejo.webp",
+  "aniversario:parabéns!": "bilder/aniversario/parabens.webp",
+  "aniversario:quantos anos tens?": "bilder/aniversario/quantos-anos-tens.webp",
+  "aniversario:festejar": "bilder/aniversario/festejar.webp",
+  "aniversario:a coroa": "bilder/aniversario/a-coroa.webp",
+  "aniversario:o chapéu de festa": "bilder/aniversario/o-chapeu-de-festa.webp",
+  "aniversario:a serpentina": "bilder/aniversario/a-serpentina.webp",
+  "aniversario:a fotografia": "bilder/aniversario/a-fotografia.webp",
+  "aniversario:agradecer": "bilder/aniversario/agradecer.webp",
+  "aniversario:convidar": "bilder/aniversario/convidar.webp",
+  "oceanario:a garrafa de ar": "bilder/oceanario/a-garrafa-de-ar.webp"
+ },
+ "szenen": {
+  "ola-1": "bilder/szenen/ola-1.webp",
+  "ola-2": "bilder/szenen/ola-2.webp",
+  "ola-3": "bilder/szenen/ola-3.webp",
+  "ola-4": "bilder/szenen/ola-4.webp",
+  "ola-5": "bilder/szenen/ola-5.webp",
+  "cores-1": "bilder/szenen/cores-1.webp",
+  "cores-2": "bilder/szenen/cores-2.webp",
+  "cores-3": "bilder/szenen/cores-3_1.webp",
+  "cores-4": "bilder/szenen/cores-4.webp",
+  "cores-5": "bilder/szenen/cores-5.webp",
+  "numeros-1": "bilder/szenen/numeros-1.webp",
+  "numeros-2": "bilder/szenen/numeros-2.webp",
+  "numeros-3": "bilder/szenen/numeros-3.webp",
+  "numeros-4": "bilder/szenen/numeros-4.webp",
+  "numeros-5": "bilder/szenen/numeros-5.webp",
+  "familia-1": "bilder/szenen/familia-1.webp",
+  "familia-2": "bilder/szenen/familia-2.webp",
+  "familia-3": "bilder/szenen/familia-3.webp",
+  "familia-4": "bilder/szenen/familia-4.webp",
+  "familia-5": "bilder/szenen/familia-5.webp",
+  "animais-1": "bilder/szenen/animais-1_1.webp",
+  "animais-2": "bilder/szenen/animais-2_1.webp",
+  "animais-3": "bilder/szenen/animais-3_1.webp",
+  "animais-4": "bilder/szenen/animais-4_1.webp",
+  "animais-5": "bilder/szenen/animais-5_1.webp",
+  "comer-1": "bilder/szenen/comer-1_1.webp",
+  "comer-2": "bilder/szenen/comer-2_1.webp",
+  "comer-3": "bilder/szenen/comer-3_1.webp",
+  "comer-4": "bilder/szenen/comer-4_1.webp",
+  "comer-5": "bilder/szenen/comer-5_1.webp",
+  "casa-1": "bilder/szenen/casa-1_1.webp",
+  "casa-2": "bilder/szenen/casa-2_1.webp",
+  "casa-3": "bilder/szenen/casa-3_1.webp",
+  "casa-4": "bilder/szenen/casa-4_1.webp",
+  "casa-5": "bilder/szenen/casa-5_1.webp",
+  "roupa-1": "bilder/szenen/roupa-1_1.webp",
+  "roupa-2": "bilder/szenen/roupa-2_1.webp",
+  "roupa-3": "bilder/szenen/roupa-3_1.webp",
+  "roupa-4": "bilder/szenen/roupa-4_1.webp",
+  "roupa-5": "bilder/szenen/roupa-5_1.webp",
+  "corpo-1": "bilder/szenen/corpo-1_1.webp",
+  "corpo-2": "bilder/szenen/corpo-2_1.webp",
+  "corpo-3": "bilder/szenen/corpo-3_1.webp",
+  "corpo-4": "bilder/szenen/corpo-4_1.webp",
+  "corpo-5": "bilder/szenen/corpo-5_1.webp",
+  "creche-1": "bilder/szenen/creche-1_1.webp",
+  "creche-2": "bilder/szenen/creche-2_1.webp",
+  "creche-3": "bilder/szenen/creche-3_1.webp",
+  "creche-4": "bilder/szenen/creche-4_1.webp",
+  "creche-5": "bilder/szenen/creche-5_1.webp",
+  "escola-1": "bilder/szenen/escola-1_1.webp",
+  "escola-2": "bilder/szenen/escola-2_1.webp",
+  "escola-3": "bilder/szenen/escola-3_1.webp",
+  "escola-4": "bilder/szenen/escola-4_1.webp",
+  "escola-5": "bilder/szenen/escola-5_1.webp",
+  "estacoes-1": "bilder/szenen/estacoes-1_1.webp",
+  "estacoes-2": "bilder/szenen/estacoes-2_1.webp",
+  "estacoes-3": "bilder/szenen/estacoes-3_1.webp",
+  "estacoes-4": "bilder/szenen/estacoes-4_1.webp",
+  "estacoes-5": "bilder/szenen/estacoes-5_1.webp",
+  "semana-1": "bilder/szenen/semana-1_1.webp",
+  "semana-2": "bilder/szenen/semana-2_1.webp",
+  "semana-3": "bilder/szenen/semana-3_1.webp",
+  "semana-4": "bilder/szenen/semana-4_1.webp",
+  "semana-5": "bilder/szenen/semana-5_1.webp",
+  "sentimentos-1": "bilder/szenen/sentimentos-1_1.webp",
+  "sentimentos-2": "bilder/szenen/sentimentos-2_1.webp",
+  "sentimentos-3": "bilder/szenen/sentimentos-3_1.webp",
+  "sentimentos-4": "bilder/szenen/sentimentos-4_1.webp",
+  "sentimentos-5": "bilder/szenen/sentimentos-5_1.webp",
+  "parque-1": "bilder/szenen/parque-1_1.webp",
+  "parque-2": "bilder/szenen/parque-2_1.webp",
+  "parque-3": "bilder/szenen/parque-3_1.webp",
+  "parque-4": "bilder/szenen/parque-4_1.webp",
+  "parque-5": "bilder/szenen/parque-5_1.webp",
+  "eletrico-1": "bilder/szenen/eletrico-1_1.webp",
+  "eletrico-2": "bilder/szenen/eletrico-2_1.webp",
+  "eletrico-3": "bilder/szenen/eletrico-3_1.webp",
+  "eletrico-4": "bilder/szenen/eletrico-4_1.webp",
+  "eletrico-5": "bilder/szenen/eletrico-5_1.webp",
+  "mercado-1": "bilder/szenen/mercado-1_1.webp",
+  "mercado-2": "bilder/szenen/mercado-2_1.webp",
+  "mercado-3": "bilder/szenen/mercado-3_1.webp",
+  "mercado-4": "bilder/szenen/mercado-4_1.webp",
+  "mercado-5": "bilder/szenen/mercado-5_1.webp",
+  "pastelaria-1": "bilder/szenen/pastelaria-1_1.webp",
+  "pastelaria-2": "bilder/szenen/pastelaria-2_1.webp",
+  "pastelaria-3": "bilder/szenen/pastelaria-3_1.webp",
+  "pastelaria-4": "bilder/szenen/pastelaria-4_1.webp",
+  "pastelaria-5": "bilder/szenen/pastelaria-5_1.webp",
+  "musica-1": "bilder/szenen/musica-1_1.webp",
+  "musica-2": "bilder/szenen/musica-2_1.webp",
+  "musica-3": "bilder/szenen/musica-3_1.webp",
+  "musica-4": "bilder/szenen/musica-4_1.webp",
+  "musica-5": "bilder/szenen/musica-5_1.webp",
+  "futebol-1": "bilder/szenen/futebol-1_1.webp",
+  "futebol-2": "bilder/szenen/futebol-2_1.webp",
+  "futebol-3": "bilder/szenen/futebol-3_1.webp",
+  "futebol-4": "bilder/szenen/futebol-4_1.webp",
+  "futebol-5": "bilder/szenen/futebol-5_1.webp",
+  "praia-1": "bilder/szenen/praia-1_1.webp",
+  "praia-2": "bilder/szenen/praia-2_1.webp",
+  "praia-3": "bilder/szenen/praia-3_1.webp",
+  "praia-4": "bilder/szenen/praia-4_1.webp",
+  "praia-5": "bilder/szenen/praia-5_1.webp",
+  "zoo-1": "bilder/szenen/zoo-1_1.webp",
+  "zoo-2": "bilder/szenen/zoo-2_1.webp",
+  "zoo-3": "bilder/szenen/zoo-3_1.webp",
+  "zoo-4": "bilder/szenen/zoo-4_1.webp",
+  "zoo-5": "bilder/szenen/zoo-5_1.webp",
+  "oceanario-1": "bilder/szenen/oceanario-1_1.webp",
+  "oceanario-2": "bilder/szenen/oceanario-2_1.webp",
+  "oceanario-3": "bilder/szenen/oceanario-3_1.webp",
+  "oceanario-4": "bilder/szenen/oceanario-4_1.webp",
+  "oceanario-5": "bilder/szenen/oceanario-5_1.webp",
+  "aniversario-1": "bilder/szenen/aniversario-1_1.webp",
+  "aniversario-2": "bilder/szenen/aniversario-2_1.webp",
+  "aniversario-3": "bilder/szenen/aniversario-3_1.webp",
+  "aniversario-4": "bilder/szenen/aniversario-4_1.webp",
+  "aniversario-5": "bilder/szenen/aniversario-5_1.webp"
+ },
+ "videos": {
+  "ola-1": "videos/ola-1.mp4",
+  "ola-2": "videos/ola-2.mp4",
+  "ola-3": "videos/ola-3.mp4",
+  "ola-4": "videos/ola-4.mp4",
+  "ola-5": "videos/ola-5.mp4",
+  "cores-1": "videos/cores-1.mp4",
+  "cores-2": "videos/cores-2.mp4",
+  "cores-3": "videos/cores-3.mp4",
+  "cores-4": "videos/cores-4.mp4",
+  "cores-5": "videos/cores-5.mp4",
+  "numeros-1": "videos/numeros-1.mp4",
+  "numeros-2": "videos/numeros-2.mp4",
+  "numeros-3": "videos/numeros-3.mp4",
+  "numeros-4": "videos/numeros-4.mp4",
+  "numeros-5": "videos/numeros-5.mp4",
+  "familia-1": "videos/familia-1.mp4",
+  "familia-2": "videos/familia-2.mp4",
+  "familia-3": "videos/familia-3.mp4",
+  "familia-4": "videos/familia-4.mp4",
+  "familia-5": "videos/familia-5.mp4",
+  "animais-1": "videos/animais-1.mp4",
+  "animais-2": "videos/animais-2.mp4",
+  "animais-3": "videos/animais-3.mp4",
+  "animais-4": "videos/animais-4.mp4",
+  "animais-5": "videos/animais-5.mp4",
+  "comer-1": "videos/comer-1.mp4",
+  "comer-2": "videos/comer-2.mp4",
+  "comer-3": "videos/comer-3.mp4",
+  "comer-4": "videos/comer-4.mp4",
+  "comer-5": "videos/comer-5.mp4",
+  "casa-1": "videos/casa-1.mp4",
+  "casa-2": "videos/casa-2.mp4",
+  "casa-3": "videos/casa-3.mp4",
+  "casa-4": "videos/casa-4.mp4",
+  "casa-5": "videos/casa-5.mp4",
+  "roupa-2": "videos/roupa-2.mp4",
+  "roupa-3": "videos/roupa-3.mp4",
+  "roupa-4": "videos/roupa-4.mp4",
+  "roupa-5": "videos/roupa-5.mp4",
+  "roupa-1": "videos/roupa-1.mp4",
+  "corpo-1": "videos/corpo-1.mp4",
+  "corpo-2": "videos/corpo-2.mp4",
+  "corpo-3": "videos/corpo-3.mp4",
+  "corpo-4": "videos/corpo-4.mp4",
+  "corpo-5": "videos/corpo-5.mp4",
+  "creche-1": "videos/creche-1.mp4",
+  "creche-2": "videos/creche-2.mp4",
+  "creche-3": "videos/creche-3.mp4",
+  "creche-4": "videos/creche-4.mp4",
+  "creche-5": "videos/creche-5.mp4",
+  "escola-1": "videos/escola-1.mp4",
+  "escola-2": "videos/escola-2.mp4",
+  "escola-3": "videos/escola-3.mp4",
+  "escola-4": "videos/escola-4.mp4",
+  "escola-5": "videos/escola-5.mp4",
+  "estacoes-1": "videos/estacoes-1.mp4",
+  "estacoes-2": "videos/estacoes-2.mp4",
+  "estacoes-3": "videos/estacoes-3.mp4",
+  "estacoes-4": "videos/estacoes-4.mp4",
+  "estacoes-5": "videos/estacoes-5.mp4",
+  "semana-1": "videos/semana-1.mp4",
+  "semana-2": "videos/semana-2.mp4",
+  "semana-3": "videos/semana-3.mp4",
+  "semana-4": "videos/semana-4.mp4",
+  "semana-5": "videos/semana-5.mp4",
+  "sentimentos-1": "videos/sentimentos-1.mp4",
+  "sentimentos-2": "videos/sentimentos-2.mp4",
+  "sentimentos-3": "videos/sentimentos-3.mp4",
+  "sentimentos-4": "videos/sentimentos-4.mp4",
+  "sentimentos-5": "videos/sentimentos-5.mp4",
+  "parque-1": "videos/parque-1.mp4",
+  "parque-2": "videos/parque-2.mp4",
+  "parque-3": "videos/parque-3.mp4",
+  "parque-4": "videos/parque-4.mp4",
+  "parque-5": "videos/parque-5.mp4",
+  "eletrico-1": "videos/eletrico-1.mp4",
+  "eletrico-2": "videos/eletrico-2.mp4",
+  "eletrico-3": "videos/eletrico-3.mp4",
+  "eletrico-4": "videos/eletrico-4.mp4",
+  "eletrico-5": "videos/eletrico-5.mp4",
+  "mercado-1": "videos/mercado-1.mp4",
+  "mercado-2": "videos/mercado-2.mp4",
+  "mercado-3": "videos/mercado-3.mp4",
+  "mercado-4": "videos/mercado-4.mp4",
+  "mercado-5": "videos/mercado-5.mp4",
+  "pastelaria-1": "videos/pastelaria-1.mp4",
+  "pastelaria-2": "videos/pastelaria-2.mp4",
+  "pastelaria-3": "videos/pastelaria-3.mp4",
+  "pastelaria-4": "videos/pastelaria-4.mp4",
+  "pastelaria-5": "videos/pastelaria-5.mp4",
+  "musica-1": "videos/musica-1.mp4",
+  "futebol-1": "videos/futebol-1.mp4",
+  "futebol-2": "videos/futebol-2.mp4",
+  "futebol-3": "videos/futebol-3.mp4",
+  "futebol-4": "videos/futebol-4.mp4",
+  "futebol-5": "videos/futebol-5.mp4",
+  "musica-2": "videos/musica-2.mp4",
+  "musica-3": "videos/musica-3.mp4",
+  "musica-4": "videos/musica-4.mp4",
+  "musica-5": "videos/musica-5.mp4",
+  "zoo-1": "videos/zoo-1.mp4",
+  "praia-1": "videos/praia-1.mp4",
+  "praia-2": "videos/praia-2.mp4",
+  "zoo-2": "videos/zoo-2.mp4",
+  "praia-3": "videos/praia-3.mp4",
+  "zoo-3": "videos/zoo-3.mp4",
+  "praia-4": "videos/praia-4.mp4",
+  "zoo-4": "videos/zoo-4.mp4",
+  "praia-5": "videos/praia-5.mp4",
+  "zoo-5": "videos/zoo-5.mp4",
+  "oceanario-1": "videos/oceanario-1.mp4",
+  "oceanario-2": "videos/oceanario-2.mp4",
+  "oceanario-3": "videos/oceanario-3.mp4",
+  "oceanario-4": "videos/oceanario-4.mp4",
+  "oceanario-5": "videos/oceanario-5.mp4",
+  "aniversario-1": "videos/aniversario-1.mp4",
+  "aniversario-2": "videos/aniversario-2.mp4",
+  "aniversario-3": "videos/aniversario-3.mp4",
+  "aniversario-4": "videos/aniversario-4.mp4",
+  "aniversario-5": "videos/aniversario-5.mp4"
+ },
+ "zeiten": {
+  "ola-1": [
+   [
+    0.5,
+    2.09
+   ],
+   [
+    2.69,
+    4.6
+   ],
+   [
+    5.2,
+    7.83
+   ],
+   [
+    8.43,
+    10.33
+   ]
+  ],
+  "ola-2": [
+   [
+    0.5,
+    1.69
+   ],
+   [
+    2.29,
+    4.12
+   ],
+   [
+    4.72,
+    8.15
+   ]
+  ],
+  "ola-3": [
+   [
+    0.5,
+    2.02
+   ],
+   [
+    2.62,
+    4.93
+   ],
+   [
+    5.53,
+    7.92
+   ],
+   [
+    8.52,
+    11.63
+   ]
+  ],
+  "ola-4": [
+   [
+    0.5,
+    2.26
+   ],
+   [
+    2.86,
+    4.29
+   ],
+   [
+    4.89,
+    7.05
+   ]
+  ],
+  "ola-5": [
+   [
+    0.5,
+    1.93
+   ],
+   [
+    2.53,
+    5.32
+   ],
+   [
+    5.92,
+    9.44
+   ],
+   [
+    10.04,
+    13.31
+   ]
+  ],
+  "cores-1": [
+   [
+    0.5,
+    2.58
+   ],
+   [
+    3.18,
+    5.41
+   ],
+   [
+    6.01,
+    8.17
+   ]
+  ],
+  "cores-3": [
+   [
+    0.5,
+    3.7
+   ],
+   [
+    4.3,
+    5.81
+   ],
+   [
+    7.54,
+    11.21
+   ]
+  ],
+  "cores-4": [
+   [
+    0.5,
+    3.06
+   ],
+   [
+    3.66,
+    5.17
+   ],
+   [
+    5.77,
+    9.45
+   ],
+   [
+    10.05,
+    13.73
+   ]
+  ],
+  "cores-5": [
+   [
+    0.5,
+    3.21
+   ],
+   [
+    3.81,
+    5.73
+   ],
+   [
+    6.33,
+    10.97
+   ]
+  ],
+  "cores-2": [
+   [
+    0.5,
+    2.49
+   ],
+   [
+    3.09,
+    5.17
+   ],
+   [
+    5.77,
+    9.77
+   ],
+   [
+    11.54,
+    13.7
+   ]
+  ],
+  "numeros-1": [
+   [
+    0.5,
+    2.9
+   ],
+   [
+    3.5,
+    5.42
+   ],
+   [
+    6.02,
+    9.05
+   ]
+  ],
+  "numeros-2": [
+   [
+    0.3,
+    1.96
+   ],
+   [
+    2.52,
+    5.48
+   ],
+   [
+    6.04,
+    11.96
+   ],
+   [
+    12.52,
+    14.6
+   ]
+  ],
+  "numeros-3": [
+   [
+    0.3,
+    2.94
+   ],
+   [
+    3.45,
+    6
+   ],
+   [
+    6.5,
+    11.78
+   ],
+   [
+    12.29,
+    14.6
+   ]
+  ],
+  "numeros-4": [
+   [
+    0.5,
+    2.42
+   ],
+   [
+    3.02,
+    8.3
+   ],
+   [
+    8.9,
+    12.9
+   ]
+  ],
+  "numeros-5": [
+   [
+    0.5,
+    2.25
+   ],
+   [
+    2.85,
+    5.17
+   ],
+   [
+    5.77,
+    8.64
+   ],
+   [
+    9.24,
+    12.68
+   ]
+  ],
+  "familia-1": [
+   [
+    0.3,
+    2.13
+   ],
+   [
+    2.33,
+    5.45
+   ],
+   [
+    5.65,
+    9.01
+   ],
+   [
+    9.21,
+    12.01
+   ],
+   [
+    12.21,
+    14.6
+   ]
+  ],
+  "familia-2": [
+   [
+    0.5,
+    2.41
+   ],
+   [
+    3.01,
+    6.21
+   ],
+   [
+    6.81,
+    10.33
+   ]
+  ],
+  "familia-3": [
+   [
+    0.5,
+    3.06
+   ],
+   [
+    3.66,
+    7.97
+   ],
+   [
+    8.57,
+    11.29
+   ]
+  ],
+  "familia-4": [
+   [
+    0.5,
+    2.58
+   ],
+   [
+    3.18,
+    6.05
+   ],
+   [
+    6.65,
+    11.05
+   ]
+  ],
+  "familia-5": [
+   [
+    0.5,
+    2.97
+   ],
+   [
+    3.57,
+    7.01
+   ],
+   [
+    7.61,
+    11.93
+   ],
+   [
+    13.54,
+    20.34
+   ]
+  ],
+  "animais-1": [
+   [
+    0.5,
+    2.5
+   ],
+   [
+    3.1,
+    5.9
+   ],
+   [
+    7.54,
+    10.02
+   ]
+  ],
+  "animais-2": [
+   [
+    0.5,
+    3.86
+   ],
+   [
+    4.46,
+    6.38
+   ],
+   [
+    7.54,
+    11.7
+   ],
+   [
+    12.3,
+    14.53
+   ]
+  ],
+  "animais-3": [
+   [
+    0.5,
+    3.54
+   ],
+   [
+    4.14,
+    5.9
+   ],
+   [
+    7.54,
+    10.89
+   ],
+   [
+    12.58,
+    14.98
+   ]
+  ],
+  "animais-4": [
+   [
+    0.5,
+    2.9
+   ],
+   [
+    4.54,
+    6.45
+   ],
+   [
+    7.05,
+    9.53
+   ],
+   [
+    10.58,
+    14.18
+   ]
+  ],
+  "animais-5": [
+   [
+    0.5,
+    3.22
+   ],
+   [
+    4.54,
+    7.02
+   ],
+   [
+    8.58,
+    12.34
+   ],
+   [
+    12.94,
+    15.66
+   ]
+  ],
+  "comer-1": [
+   [
+    0.5,
+    3.62
+   ],
+   [
+    4.22,
+    7.56
+   ],
+   [
+    9.54,
+    12.41
+   ],
+   [
+    13.01,
+    16.21
+   ]
+  ],
+  "comer-2": [
+   [
+    0.5,
+    3.22
+   ],
+   [
+    3.82,
+    6.22
+   ],
+   [
+    7.54,
+    10.73
+   ]
+  ],
+  "comer-3": [
+   [
+    0.5,
+    1.94
+   ],
+   [
+    2.54,
+    5.25
+   ],
+   [
+    6.54,
+    8.77
+   ],
+   [
+    10.58,
+    13.3
+   ]
+  ],
+  "comer-4": [
+   [
+    0.5,
+    4.66
+   ],
+   [
+    5.26,
+    7.01
+   ],
+   [
+    8.54,
+    11.74
+   ]
+  ],
+  "comer-5": [
+   [
+    0.5,
+    2.89
+   ],
+   [
+    3.49,
+    6.2
+   ],
+   [
+    7.54,
+    9.78
+   ],
+   [
+    10.38,
+    14.06
+   ]
+  ],
+  "casa-1": [
+   [
+    0.5,
+    2.33
+   ],
+   [
+    2.93,
+    5.88
+   ],
+   [
+    7.54,
+    9.45
+   ],
+   [
+    11.58,
+    15.34
+   ]
+  ],
+  "casa-2": [
+   [
+    0.5,
+    4.1
+   ],
+   [
+    5.54,
+    7.45
+   ],
+   [
+    8.05,
+    11.64
+   ]
+  ],
+  "casa-3": [
+   [
+    0.5,
+    3.3
+   ],
+   [
+    3.9,
+    6.29
+   ],
+   [
+    7.54,
+    11.21
+   ]
+  ],
+  "casa-4": [
+   [
+    0.5,
+    3.69
+   ],
+   [
+    5.54,
+    10.74
+   ],
+   [
+    12.58,
+    14.98
+   ]
+  ],
+  "casa-5": [
+   [
+    0.5,
+    3.46
+   ],
+   [
+    4.54,
+    7.57
+   ],
+   [
+    9.58,
+    13.82
+   ]
+  ],
+  "roupa-2": [
+   [
+    0.5,
+    2.02
+   ],
+   [
+    2.62,
+    6.7
+   ],
+   [
+    8.54,
+    12.29
+   ]
+  ],
+  "roupa-3": [
+   [
+    0.5,
+    3.62
+   ],
+   [
+    4.22,
+    7.49
+   ],
+   [
+    8.54,
+    12.94
+   ],
+   [
+    14.58,
+    16.57
+   ]
+  ],
+  "roupa-4": [
+   [
+    0.5,
+    4.18
+   ],
+   [
+    4.78,
+    8.53
+   ],
+   [
+    10.54,
+    13.82
+   ],
+   [
+    15.58,
+    19.42
+   ]
+  ],
+  "roupa-5": [
+   [
+    0.5,
+    4.1
+   ],
+   [
+    5.54,
+    7.85
+   ],
+   [
+    9.58,
+    14.06
+   ]
+  ],
+  "roupa-1": [
+   [
+    0.5,
+    4.18
+   ],
+   [
+    5.54,
+    7.93
+   ],
+   [
+    8.53,
+    11.09
+   ],
+   [
+    12.58,
+    14.98
+   ]
+  ],
+  "corpo-1": [
+   [
+    0.5,
+    3.54
+   ],
+   [
+    5.54,
+    8.26
+   ],
+   [
+    9.58,
+    14.13
+   ]
+  ],
+  "corpo-2": [
+   [
+    0.5,
+    3.3
+   ],
+   [
+    4.54,
+    8.54
+   ],
+   [
+    9.58,
+    12.37
+   ]
+  ],
+  "corpo-3": [
+   [
+    0.5,
+    3.46
+   ],
+   [
+    4.54,
+    8.46
+   ],
+   [
+    9.58,
+    12.62
+   ],
+   [
+    13.22,
+    16.82
+   ]
+  ],
+  "corpo-4": [
+   [
+    0.5,
+    4.1
+   ],
+   [
+    5.54,
+    8.26
+   ],
+   [
+    9.58,
+    11.58
+   ]
+  ],
+  "corpo-5": [
+   [
+    0.5,
+    3.7
+   ],
+   [
+    5.54,
+    9.46
+   ],
+   [
+    10.58,
+    14.66
+   ]
+  ],
+  "creche-1": [
+   [
+    0.5,
+    4.42
+   ],
+   [
+    5.54,
+    8.26
+   ],
+   [
+    9.58,
+    11.66
+   ],
+   [
+    12.26,
+    15.77
+   ]
+  ],
+  "creche-2": [
+   [
+    0.5,
+    1.93
+   ],
+   [
+    4.54,
+    8.61
+   ],
+   [
+    10.58,
+    15.62
+   ]
+  ],
+  "creche-3": [
+   [
+    0.5,
+    4.18
+   ],
+   [
+    5.54,
+    8.17
+   ],
+   [
+    8.77,
+    10.21
+   ]
+  ],
+  "creche-4": [
+   [
+    0.5,
+    2.66
+   ],
+   [
+    4.54,
+    8.06
+   ],
+   [
+    9.58,
+    12.29
+   ],
+   [
+    13.63,
+    17.23
+   ]
+  ],
+  "creche-5": [
+   [
+    0.5,
+    3.54
+   ],
+   [
+    5.54,
+    9.29
+   ],
+   [
+    10.58,
+    13.3
+   ],
+   [
+    14.63,
+    17.75
+   ],
+   [
+    19.67,
+    22.07
+   ]
+  ],
+  "escola-1": [
+   [
+    0.5,
+    3.14
+   ],
+   [
+    3.74,
+    6.54
+   ],
+   [
+    8.54,
+    10.7
+   ],
+   [
+    12.58,
+    16.01
+   ]
+  ],
+  "escola-2": [
+   [
+    0.5,
+    4.5
+   ],
+   [
+    5.54,
+    8.33
+   ],
+   [
+    9.58,
+    12.05
+   ]
+  ],
+  "escola-3": [
+   [
+    0.5,
+    3.78
+   ],
+   [
+    5.54,
+    7.86
+   ],
+   [
+    9.58,
+    11.57
+   ]
+  ],
+  "escola-4": [
+   [
+    0.5,
+    4.42
+   ],
+   [
+    5.54,
+    8.5
+   ],
+   [
+    9.58,
+    12.77
+   ]
+  ],
+  "escola-5": [
+   [
+    0.5,
+    2.82
+   ],
+   [
+    4.54,
+    6.37
+   ],
+   [
+    6.97,
+    8.73
+   ],
+   [
+    10.58,
+    11.53
+   ],
+   [
+    12.13,
+    14.92
+   ],
+   [
+    16.63,
+    19.5
+   ],
+   [
+    20.67,
+    23.06
+   ]
+  ],
+  "estacoes-1": [
+   [
+    0.5,
+    2.58
+   ],
+   [
+    4.54,
+    7.89
+   ],
+   [
+    9.58,
+    12.69
+   ]
+  ],
+  "estacoes-2": [
+   [
+    0.5,
+    2.98
+   ],
+   [
+    4.54,
+    7.97
+   ],
+   [
+    9.58,
+    13.5
+   ]
+  ],
+  "estacoes-3": [
+   [
+    0.5,
+    2.98
+   ],
+   [
+    4.54,
+    8.46
+   ],
+   [
+    9.58,
+    12.7
+   ]
+  ],
+  "estacoes-4": [
+   [
+    0.5,
+    4.34
+   ],
+   [
+    5.54,
+    7.22
+   ],
+   [
+    9.58,
+    12.86
+   ]
+  ],
+  "estacoes-5": [
+   [
+    0.5,
+    2.02
+   ],
+   [
+    4.54,
+    8.46
+   ],
+   [
+    9.58,
+    12.78
+   ]
+  ],
+  "semana-1": [
+   [
+    0.5,
+    5.54
+   ],
+   [
+    7.54,
+    9.94
+   ],
+   [
+    11.58,
+    13.58
+   ],
+   [
+    15.63,
+    19.06
+   ]
+  ],
+  "semana-2": [
+   [
+    0.5,
+    2.01
+   ],
+   [
+    2.61,
+    8.37
+   ],
+   [
+    9.54,
+    12.18
+   ],
+   [
+    13.58,
+    16.22
+   ]
+  ],
+  "semana-3": [
+   [
+    0.5,
+    2.98
+   ],
+   [
+    4.54,
+    7.01
+   ],
+   [
+    8.58,
+    12.58
+   ],
+   [
+    13.63,
+    16.99
+   ]
+  ],
+  "semana-4": [
+   [
+    0.5,
+    2.74
+   ],
+   [
+    4.54,
+    7.26
+   ],
+   [
+    8.58,
+    11.94
+   ],
+   [
+    13.63,
+    15.87
+   ]
+  ],
+  "semana-5": [
+   [
+    0.5,
+    2.73
+   ],
+   [
+    3.33,
+    5.65
+   ],
+   [
+    7.54,
+    10.26
+   ],
+   [
+    11.58,
+    13.01
+   ]
+  ],
+  "sentimentos-1": [
+   [
+    0.5,
+    2.1
+   ],
+   [
+    2.7,
+    4.05
+   ],
+   [
+    5.54,
+    10.34
+   ],
+   [
+    11.58,
+    16.22
+   ],
+   [
+    16.82,
+    18.98
+   ]
+  ],
+  "sentimentos-2": [
+   [
+    0.5,
+    4.66
+   ],
+   [
+    6.54,
+    7.9
+   ],
+   [
+    8.5,
+    11.62
+   ],
+   [
+    13.58,
+    16.85
+   ],
+   [
+    17.45,
+    20.57
+   ],
+   [
+    21.63,
+    24.9
+   ]
+  ],
+  "sentimentos-3": [
+   [
+    0.5,
+    3.86
+   ],
+   [
+    5.54,
+    7.94
+   ],
+   [
+    9.58,
+    11.4
+   ],
+   [
+    13.63,
+    18.11
+   ]
+  ],
+  "sentimentos-4": [
+   [
+    0.5,
+    2.25
+   ],
+   [
+    2.85,
+    5.96
+   ],
+   [
+    7.54,
+    9.46
+   ],
+   [
+    10.06,
+    11.89
+   ],
+   [
+    13.58,
+    15.66
+   ],
+   [
+    16.26,
+    18.34
+   ]
+  ],
+  "sentimentos-5": [
+   [
+    0.5,
+    5.3
+   ],
+   [
+    6.54,
+    10.05
+   ],
+   [
+    11.58,
+    17.34
+   ],
+   [
+    17.94,
+    20.16
+   ]
+  ],
+  "parque-1": [
+   [
+    0.5,
+    3.86
+   ],
+   [
+    4.46,
+    7.1
+   ],
+   [
+    8.54,
+    10.53
+   ],
+   [
+    11.13,
+    14.32
+   ]
+  ],
+  "parque-2": [
+   [
+    0.5,
+    3.85
+   ],
+   [
+    5.54,
+    10.98
+   ],
+   [
+    12.58,
+    14.65
+   ],
+   [
+    15.25,
+    17.89
+   ]
+  ],
+  "parque-3": [
+   [
+    0.5,
+    6.9
+   ],
+   [
+    8.54,
+    11.97
+   ],
+   [
+    12.57,
+    14.49
+   ]
+  ],
+  "parque-4": [
+   [
+    0.5,
+    3.53
+   ],
+   [
+    5.54,
+    9.54
+   ],
+   [
+    10.14,
+    15.26
+   ],
+   [
+    16.58,
+    19.05
+   ]
+  ],
+  "parque-5": [
+   [
+    0.5,
+    5.06
+   ],
+   [
+    6.54,
+    8.06
+   ],
+   [
+    10.58,
+    14.5
+   ]
+  ],
+  "eletrico-1": [
+   [
+    0.5,
+    3.86
+   ],
+   [
+    4.46,
+    8.21
+   ],
+   [
+    8.81,
+    12.65
+   ],
+   [
+    14.54,
+    18.13
+   ]
+  ],
+  "eletrico-2": [
+   [
+    0.5,
+    4.82
+   ],
+   [
+    5.42,
+    7.1
+   ],
+   [
+    8.54,
+    10.94
+   ],
+   [
+    11.54,
+    12.97
+   ],
+   [
+    14.58,
+    16.98
+   ]
+  ],
+  "eletrico-3": [
+   [
+    0.5,
+    3.06
+   ],
+   [
+    3.66,
+    5.33
+   ],
+   [
+    6.54,
+    9.25
+   ],
+   [
+    9.85,
+    14.49
+   ]
+  ],
+  "eletrico-4": [
+   [
+    0.5,
+    2.66
+   ],
+   [
+    3.26,
+    4.86
+   ],
+   [
+    6.54,
+    9.74
+   ],
+   [
+    10.34,
+    11.7
+   ],
+   [
+    13.58,
+    17.5
+   ]
+  ],
+  "eletrico-5": [
+   [
+    0.5,
+    3.62
+   ],
+   [
+    4.22,
+    6.45
+   ],
+   [
+    7.54,
+    10.66
+   ],
+   [
+    12.58,
+    15.7
+   ]
+  ],
+  "mercado-1": [
+   [
+    0.5,
+    3.7
+   ],
+   [
+    5.54,
+    8.66
+   ],
+   [
+    9.26,
+    12.61
+   ],
+   [
+    14.58,
+    17.37
+   ],
+   [
+    17.97,
+    20.44
+   ]
+  ],
+  "mercado-2": [
+   [
+    0.5,
+    2.65
+   ],
+   [
+    3.25,
+    5.17
+   ],
+   [
+    6.54,
+    9.01
+   ],
+   [
+    10.58,
+    16.34
+   ]
+  ],
+  "mercado-3": [
+   [
+    0.5,
+    4.42
+   ],
+   [
+    5.54,
+    9.05
+   ],
+   [
+    9.65,
+    12.52
+   ],
+   [
+    13.58,
+    17.82
+   ]
+  ],
+  "mercado-4": [
+   [
+    0.5,
+    3.06
+   ],
+   [
+    3.66,
+    6.29
+   ],
+   [
+    7.54,
+    8.5
+   ],
+   [
+    9.1,
+    11.5
+   ],
+   [
+    12.58,
+    17.46
+   ]
+  ],
+  "mercado-5": [
+   [
+    0.5,
+    1.93
+   ],
+   [
+    2.53,
+    5.49
+   ],
+   [
+    6.54,
+    9.82
+   ],
+   [
+    10.42,
+    12.65
+   ],
+   [
+    14.58,
+    16.66
+   ],
+   [
+    18.63,
+    21.83
+   ]
+  ],
+  "pastelaria-1": [
+   [
+    0.5,
+    4.1
+   ],
+   [
+    5.54,
+    7.61
+   ],
+   [
+    8.21,
+    13
+   ],
+   [
+    13.6,
+    15.6
+   ]
+  ],
+  "pastelaria-2": [
+   [
+    0.5,
+    2.26
+   ],
+   [
+    2.86,
+    5.5
+   ],
+   [
+    6.1,
+    8.1
+   ],
+   [
+    9.54,
+    11.94
+   ],
+   [
+    12.54,
+    14.53
+   ],
+   [
+    15.58,
+    21.9
+   ],
+   [
+    23.63,
+    25.87
+   ]
+  ],
+  "pastelaria-3": [
+   [
+    0.5,
+    5.78
+   ],
+   [
+    7.54,
+    9.3
+   ],
+   [
+    9.9,
+    11.97
+   ],
+   [
+    13.58,
+    15.1
+   ]
+  ],
+  "pastelaria-4": [
+   [
+    0.5,
+    3.29
+   ],
+   [
+    3.89,
+    6.69
+   ],
+   [
+    8.54,
+    11.01
+   ],
+   [
+    11.61,
+    14.33
+   ],
+   [
+    17.03,
+    18.55
+   ]
+  ],
+  "pastelaria-5": [
+   [
+    0.5,
+    3.62
+   ],
+   [
+    5.54,
+    6.82
+   ],
+   [
+    9.58,
+    12.38
+   ],
+   [
+    12.98,
+    16.81
+   ],
+   [
+    18.63,
+    21.19
+   ],
+   [
+    22.67,
+    24.98
+   ]
+  ],
+  "musica-1": [
+   [
+    0.5,
+    5.7
+   ],
+   [
+    7.54,
+    11.06
+   ],
+   [
+    11.66,
+    13.74
+   ],
+   [
+    15.58,
+    17.42
+   ],
+   [
+    18.02,
+    19.85
+   ],
+   [
+    20.45,
+    23.17
+   ]
+  ],
+  "futebol-1": [
+   [
+    0.5,
+    3.62
+   ],
+   [
+    5.54,
+    8.98
+   ],
+   [
+    9.58,
+    13.09
+   ],
+   [
+    13.69,
+    15.84
+   ],
+   [
+    17.58,
+    20.38
+   ]
+  ],
+  "futebol-2": [
+   [
+    0.5,
+    4.82
+   ],
+   [
+    6.54,
+    8.21
+   ],
+   [
+    10.58,
+    14.5
+   ]
+  ],
+  "futebol-3": [
+   [
+    0.5,
+    3.86
+   ],
+   [
+    5.54,
+    7.44
+   ],
+   [
+    9.58,
+    11.81
+   ],
+   [
+    12.41,
+    14.89
+   ],
+   [
+    16.63,
+    19.59
+   ]
+  ],
+  "futebol-4": [
+   [
+    0.5,
+    2.33
+   ],
+   [
+    2.93,
+    5.65
+   ],
+   [
+    7.54,
+    11.7
+   ],
+   [
+    13.58,
+    17.66
+   ],
+   [
+    19.63,
+    21.37
+   ]
+  ],
+  "futebol-5": [
+   [
+    0.5,
+    3.53
+   ],
+   [
+    5.54,
+    8.09
+   ],
+   [
+    9.58,
+    11.97
+   ],
+   [
+    13.63,
+    16.75
+   ]
+  ],
+  "musica-2": [
+   [
+    0.5,
+    2.49
+   ],
+   [
+    3.09,
+    4.76
+   ],
+   [
+    6.54,
+    9.57
+   ],
+   [
+    10.17,
+    12.81
+   ],
+   [
+    14.58,
+    18.66
+   ]
+  ],
+  "musica-3": [
+   [
+    0.5,
+    3.94
+   ],
+   [
+    5.54,
+    7.7
+   ],
+   [
+    11.68,
+    14.32
+   ],
+   [
+    14.92,
+    16.59
+   ]
+  ],
+  "musica-4": [
+   [
+    0.5,
+    3.22
+   ],
+   [
+    4.54,
+    8.94
+   ],
+   [
+    10.58,
+    14.34
+   ]
+  ],
+  "musica-5": [
+   [
+    0.5,
+    4.5
+   ],
+   [
+    5.54,
+    7.06
+   ],
+   [
+    9.58,
+    13.26
+   ],
+   [
+    14.63,
+    17.35
+   ]
+  ],
+  "zoo-1": [
+   [
+    0.5,
+    3.94
+   ],
+   [
+    5.54,
+    7.37
+   ],
+   [
+    7.97,
+    10.61
+   ],
+   [
+    12.58,
+    15.13
+   ],
+   [
+    15.73,
+    18.6
+   ]
+  ],
+  "praia-1": [
+   [
+    0.5,
+    4.66
+   ],
+   [
+    6.54,
+    9.01
+   ],
+   [
+    9.61,
+    11.35
+   ],
+   [
+    12.58,
+    15.21
+   ],
+   [
+    15.81,
+    18.61
+   ]
+  ],
+  "praia-2": [
+   [
+    0.5,
+    2.34
+   ],
+   [
+    2.94,
+    4.45
+   ],
+   [
+    5.54,
+    8.58
+   ],
+   [
+    9.18,
+    11.1
+   ],
+   [
+    12.58,
+    14.5
+   ],
+   [
+    15.1,
+    17.57
+   ]
+  ],
+  "zoo-2": [
+   [
+    0.5,
+    4.09
+   ],
+   [
+    5.54,
+    7.69
+   ],
+   [
+    8.29,
+    10.44
+   ],
+   [
+    11.58,
+    14.29
+   ],
+   [
+    14.89,
+    18.89
+   ]
+  ],
+  "praia-3": [
+   [
+    0.5,
+    2.49
+   ],
+   [
+    3.09,
+    5.08
+   ],
+   [
+    6.54,
+    8.86
+   ],
+   [
+    10.58,
+    13.45
+   ]
+  ],
+  "zoo-3": [
+   [
+    0.5,
+    2.01
+   ],
+   [
+    2.61,
+    6.36
+   ],
+   [
+    7.54,
+    10.18
+   ],
+   [
+    11.58,
+    14.37
+   ],
+   [
+    15.63,
+    17.55
+   ],
+   [
+    18.15,
+    20.46
+   ]
+  ],
+  "praia-4": [
+   [
+    0.5,
+    2
+   ],
+   [
+    2.6,
+    4.6
+   ],
+   [
+    6.54,
+    9.42
+   ],
+   [
+    10.58,
+    14.09
+   ],
+   [
+    14.69,
+    16.68
+   ],
+   [
+    18.63,
+    21.99
+   ]
+  ],
+  "zoo-4": [
+   [
+    0.5,
+    4.02
+   ],
+   [
+    5.54,
+    9.94
+   ],
+   [
+    11.58,
+    13.02
+   ],
+   [
+    13.62,
+    15.61
+   ]
+  ],
+  "praia-5": [
+   [
+    0.5,
+    3.29
+   ],
+   [
+    4.54,
+    8.78
+   ],
+   [
+    10.58,
+    12.42
+   ],
+   [
+    14.63,
+    16.47
+   ],
+   [
+    17.07,
+    19.7
+   ]
+  ],
+  "zoo-5": [
+   [
+    0.5,
+    3.37
+   ],
+   [
+    3.97,
+    6.76
+   ],
+   [
+    8.54,
+    11.97
+   ],
+   [
+    12.57,
+    15.28
+   ],
+   [
+    16.58,
+    20.09
+   ],
+   [
+    21.63,
+    25.87
+   ]
+  ],
+  "oceanario-1": [
+   [
+    0.5,
+    6.02
+   ],
+   [
+    7.54,
+    10.65
+   ],
+   [
+    11.25,
+    14.21
+   ],
+   [
+    15.58,
+    17.73
+   ],
+   [
+    18.33,
+    19.93
+   ],
+   [
+    21.63,
+    23.54
+   ],
+   [
+    24.14,
+    26.78
+   ],
+   [
+    27.38,
+    28.74
+   ]
+  ],
+  "oceanario-2": [
+   [
+    0.5,
+    3.77
+   ],
+   [
+    5.54,
+    7.37
+   ],
+   [
+    7.97,
+    11.09
+   ],
+   [
+    12.58,
+    16.42
+   ],
+   [
+    17.63,
+    20.83
+   ],
+   [
+    21.43,
+    23.89
+   ]
+  ],
+  "oceanario-3": [
+   [
+    0.5,
+    3.05
+   ],
+   [
+    3.65,
+    6.27
+   ],
+   [
+    7.54,
+    11.3
+   ],
+   [
+    12.58,
+    14.9
+   ],
+   [
+    15.5,
+    17.49
+   ]
+  ],
+  "oceanario-4": [
+   [
+    0.5,
+    3.86
+   ],
+   [
+    4.46,
+    6.69
+   ],
+   [
+    8.54,
+    10.6
+   ],
+   [
+    11.2,
+    13.44
+   ],
+   [
+    14.58,
+    17.78
+   ]
+  ],
+  "oceanario-5": [
+   [
+    0.5,
+    3.78
+   ],
+   [
+    5.54,
+    9.85
+   ],
+   [
+    11.58,
+    15.1
+   ],
+   [
+    15.7,
+    18.01
+   ],
+   [
+    18.61,
+    20.53
+   ]
+  ],
+  "aniversario-1": [
+   [
+    0.5,
+    4.58
+   ],
+   [
+    6.54,
+    9.74
+   ],
+   [
+    10.34,
+    11.86
+   ],
+   [
+    13.58,
+    16.13
+   ],
+   [
+    16.73,
+    18.96
+   ]
+  ],
+  "aniversario-2": [
+   [
+    0.5,
+    5.46
+   ],
+   [
+    6.54,
+    8.85
+   ],
+   [
+    9.45,
+    12.32
+   ],
+   [
+    13.58,
+    15.81
+   ],
+   [
+    16.41,
+    19.61
+   ]
+  ],
+  "aniversario-3": [
+   [
+    0.5,
+    3.37
+   ],
+   [
+    3.97,
+    6.69
+   ],
+   [
+    8.54,
+    9.97
+   ],
+   [
+    10.57,
+    11.76
+   ],
+   [
+    13.58,
+    15.58
+   ],
+   [
+    16.18,
+    18.1
+   ],
+   [
+    18.7,
+    21.58
+   ]
+  ],
+  "aniversario-4": [
+   [
+    0.5,
+    2.98
+   ],
+   [
+    3.58,
+    5.16
+   ],
+   [
+    6.54,
+    8.13
+   ],
+   [
+    8.73,
+    10.65
+   ],
+   [
+    11.25,
+    12.84
+   ],
+   [
+    27.08,
+    28.43
+   ],
+   [
+    29.61,
+    32.97
+   ],
+   [
+    34.65,
+    35.99
+   ],
+   [
+    36.59,
+    38.34
+   ]
+  ],
+  "aniversario-5": [
+   [
+    0.5,
+    4.57
+   ],
+   [
+    6.54,
+    11.26
+   ],
+   [
+    12.58,
+    16.5
+   ],
+   [
+    17.1,
+    21.17
+   ],
+   [
+    22.63,
+    25.99
+   ]
+  ]
+ },
+ "icons": {
+  "ola": "bilder/icons/ola.webp",
+  "cores": "bilder/icons/cores.webp",
+  "numeros": "bilder/icons/numeros.webp",
+  "familia": "bilder/icons/familia.webp",
+  "animais": "bilder/icons/animais.webp",
+  "comer": "bilder/icons/comer.webp",
+  "casa": "bilder/icons/casa.webp",
+  "roupa": "bilder/icons/roupa.webp",
+  "corpo": "bilder/icons/corpo.webp",
+  "creche": "bilder/icons/creche.webp",
+  "escola": "bilder/icons/escola.webp",
+  "estacoes": "bilder/icons/estacoes.webp",
+  "semana": "bilder/icons/semana.webp",
+  "sentimentos": "bilder/icons/sentimentos.webp",
+  "parque": "bilder/icons/parque.webp",
+  "eletrico": "bilder/icons/eletrico.webp",
+  "mercado": "bilder/icons/mercado.webp",
+  "pastelaria": "bilder/icons/pastelaria.webp",
+  "musica": "bilder/icons/musica.webp",
+  "futebol": "bilder/icons/futebol.webp",
+  "praia": "bilder/icons/praia.webp",
+  "zoo": "bilder/icons/zoo.webp",
+  "oceanario": "bilder/icons/oceanario.webp",
+  "aniversario": "bilder/icons/aniversario.webp",
+  "santos": "bilder/icons/santos.webp",
+  "ola-1": "bilder/icons/ola-1.webp",
+  "ola-2": "bilder/icons/ola-2.webp",
+  "ola-3": "bilder/icons/ola-3.webp",
+  "ola-4": "bilder/icons/ola-4.webp",
+  "ola-5": "bilder/icons/ola-5.webp",
+  "cores-1": "bilder/icons/cores-1.webp",
+  "cores-2": "bilder/icons/cores-2.webp",
+  "cores-3": "bilder/icons/cores-3.webp",
+  "cores-4": "bilder/icons/cores-4.webp",
+  "cores-5": "bilder/icons/cores-5.webp",
+  "numeros-1": "bilder/icons/numeros-1.webp",
+  "numeros-2": "bilder/icons/numeros-2.webp",
+  "numeros-3": "bilder/icons/numeros-3.webp",
+  "numeros-4": "bilder/icons/numeros-4.webp",
+  "numeros-5": "bilder/icons/numeros-5.webp",
+  "familia-1": "bilder/icons/familia-1.webp",
+  "familia-2": "bilder/icons/familia-2.webp",
+  "familia-3": "bilder/icons/familia-3.webp",
+  "familia-4": "bilder/icons/familia-4.webp",
+  "familia-5": "bilder/icons/familia-5.webp",
+  "animais-1": "bilder/icons/animais-1.webp",
+  "animais-2": "bilder/icons/animais-2.webp",
+  "animais-3": "bilder/icons/animais-3.webp",
+  "animais-4": "bilder/icons/animais-4.webp",
+  "animais-5": "bilder/icons/animais-5.webp",
+  "comer-1": "bilder/icons/comer-1.webp",
+  "comer-2": "bilder/icons/comer-2.webp",
+  "comer-3": "bilder/icons/comer-3.webp",
+  "comer-4": "bilder/icons/comer-4.webp",
+  "comer-5": "bilder/icons/comer-5.webp",
+  "casa-1": "bilder/icons/casa-1.webp",
+  "casa-2": "bilder/icons/casa-2.webp",
+  "casa-3": "bilder/icons/casa-3.webp",
+  "casa-4": "bilder/icons/casa-4.webp",
+  "casa-5": "bilder/icons/casa-5.webp",
+  "roupa-1": "bilder/icons/roupa-1.webp",
+  "roupa-2": "bilder/icons/roupa-2.webp",
+  "roupa-3": "bilder/icons/roupa-3.webp",
+  "roupa-4": "bilder/icons/roupa-4.webp",
+  "roupa-5": "bilder/icons/roupa-5.webp",
+  "corpo-1": "bilder/icons/corpo-1.webp",
+  "corpo-2": "bilder/icons/corpo-2.webp",
+  "corpo-3": "bilder/icons/corpo-3.webp",
+  "corpo-4": "bilder/icons/corpo-4.webp",
+  "corpo-5": "bilder/icons/corpo-5.webp",
+  "creche-1": "bilder/icons/creche-1.webp",
+  "creche-2": "bilder/icons/creche-2.webp",
+  "creche-3": "bilder/icons/creche-3.webp",
+  "creche-4": "bilder/icons/creche-4.webp",
+  "creche-5": "bilder/icons/creche-5.webp",
+  "spiel-memoria": "bilder/icons/spiel-memoria.webp",
+  "spiel-corre": "bilder/icons/spiel-corre.webp",
+  "spiel-pondi": "bilder/icons/spiel-pondi.webp",
+  "spiel-baloica": "bilder/icons/spiel-baloica.webp",
+  "spiel-esconde": "bilder/icons/spiel-esconde.webp",
+  "spiel-lontra": "bilder/icons/spiel-lontra.webp",
+  "spiel-safari": "bilder/icons/spiel-safari.webp",
+  "spiel-corrida": "bilder/icons/spiel-corrida.webp",
+  "spiel-lili": "bilder/icons/spiel-lili.webp",
+  "escola-1": "bilder/icons/escola-1.webp",
+  "escola-2": "bilder/icons/escola-2.webp",
+  "escola-3": "bilder/icons/escola-3.webp",
+  "escola-4": "bilder/icons/escola-4.webp",
+  "escola-5": "bilder/icons/escola-5.webp",
+  "estacoes-1": "bilder/icons/estacoes-1.webp",
+  "estacoes-2": "bilder/icons/estacoes-2.webp",
+  "estacoes-3": "bilder/icons/estacoes-3.webp",
+  "estacoes-4": "bilder/icons/estacoes-4.webp",
+  "estacoes-5": "bilder/icons/estacoes-5.webp",
+  "ex-cores": "bilder/icons/ex-cores.webp",
+  "ex-casa": "bilder/icons/ex-casa.webp",
+  "semana-1": "bilder/icons/semana-1.webp",
+  "semana-2": "bilder/icons/semana-2.webp",
+  "semana-3": "bilder/icons/semana-3.webp",
+  "semana-4": "bilder/icons/semana-4.webp",
+  "semana-5": "bilder/icons/semana-5.webp",
+  "sentimentos-1": "bilder/icons/sentimentos-1.webp",
+  "sentimentos-2": "bilder/icons/sentimentos-2.webp",
+  "sentimentos-3": "bilder/icons/sentimentos-3.webp",
+  "sentimentos-4": "bilder/icons/sentimentos-4.webp",
+  "sentimentos-5": "bilder/icons/sentimentos-5.webp",
+  "ex-ola": "bilder/icons/ex-ola.webp",
+  "ex-numeros": "bilder/icons/ex-numeros.webp",
+  "ex-familia": "bilder/icons/ex-familia.webp",
+  "ex-animais": "bilder/icons/ex-animais.webp",
+  "ex-comer": "bilder/icons/ex-comer.webp",
+  "ex-roupa": "bilder/icons/ex-roupa.webp",
+  "spiel-eletrico": "bilder/icons/spiel-eletrico.webp",
+  "ex-corpo": "bilder/icons/ex-corpo.webp",
+  "parque-1": "bilder/icons/parque-1.webp",
+  "parque-2": "bilder/icons/parque-2.webp",
+  "parque-3": "bilder/icons/parque-3.webp",
+  "parque-4": "bilder/icons/parque-4.webp",
+  "parque-5": "bilder/icons/parque-5.webp",
+  "eletrico-1": "bilder/icons/eletrico-1.webp",
+  "eletrico-2": "bilder/icons/eletrico-2.webp",
+  "eletrico-3": "bilder/icons/eletrico-3.webp",
+  "eletrico-4": "bilder/icons/eletrico-4.webp",
+  "eletrico-5": "bilder/icons/eletrico-5.webp",
+  "ex-creche": "bilder/icons/ex-creche.webp",
+  "ex-escola": "bilder/icons/ex-escola.webp",
+  "ex-estacoes": "bilder/icons/ex-estacoes.webp",
+  "mercado-1": "bilder/icons/mercado-1.webp",
+  "mercado-2": "bilder/icons/mercado-2.webp",
+  "mercado-3": "bilder/icons/mercado-3.webp",
+  "mercado-4": "bilder/icons/mercado-4.webp",
+  "ex-semana": "bilder/icons/ex-semana.webp",
+  "mercado-5": "bilder/icons/mercado-5.webp",
+  "pastelaria-1": "bilder/icons/pastelaria-1.webp",
+  "pastelaria-2": "bilder/icons/pastelaria-2.webp",
+  "pastelaria-3": "bilder/icons/pastelaria-3.webp",
+  "pastelaria-4": "bilder/icons/pastelaria-4.webp",
+  "pastelaria-5": "bilder/icons/pastelaria-5.webp",
+  "ex-sentimentos": "bilder/icons/ex-sentimentos.webp",
+  "musica-1": "bilder/icons/musica-1.webp",
+  "musica-2": "bilder/icons/musica-2.webp",
+  "musica-3": "bilder/icons/musica-3.webp",
+  "musica-4": "bilder/icons/musica-4.webp",
+  "futebol-1": "bilder/icons/futebol-1.webp",
+  "futebol-2": "bilder/icons/futebol-2.webp",
+  "futebol-3": "bilder/icons/futebol-3.webp",
+  "futebol-4": "bilder/icons/futebol-4.webp",
+  "futebol-5": "bilder/icons/futebol-5.webp",
+  "musica-5": "bilder/icons/musica-5.webp",
+  "ex-parque": "bilder/icons/ex-parque.webp",
+  "praia-1": "bilder/icons/praia-1.webp",
+  "praia-2": "bilder/icons/praia-2.webp",
+  "praia-3": "bilder/icons/praia-3.webp",
+  "praia-4": "bilder/icons/praia-4.webp",
+  "praia-5": "bilder/icons/praia-5.webp",
+  "zoo-1": "bilder/icons/zoo-1.webp",
+  "zoo-2": "bilder/icons/zoo-2.webp",
+  "zoo-3": "bilder/icons/zoo-3.webp",
+  "zoo-4": "bilder/icons/zoo-4.webp",
+  "zoo-5": "bilder/icons/zoo-5.webp",
+  "ex-eletrico": "bilder/icons/ex-eletrico.webp",
+  "ex-mercado": "bilder/icons/ex-mercado.webp",
+  "oceanario-1": "bilder/icons/oceanario-1.webp",
+  "oceanario-2": "bilder/icons/oceanario-2.webp",
+  "oceanario-3": "bilder/icons/oceanario-3.webp",
+  "oceanario-4": "bilder/icons/oceanario-4.webp",
+  "oceanario-5": "bilder/icons/oceanario-5.webp",
+  "aniversario-1": "bilder/icons/aniversario-1.webp",
+  "aniversario-2": "bilder/icons/aniversario-2.webp",
+  "aniversario-3": "bilder/icons/aniversario-3.webp",
+  "aniversario-4": "bilder/icons/aniversario-4.webp",
+  "aniversario-5": "bilder/icons/aniversario-5.webp",
+  "spiel-gomas": "bilder/icons/spiel-gomas.webp",
+  "spiel-fila": "bilder/icons/spiel-fila.webp",
+  "ex-futebol": "bilder/icons/ex-futebol.webp",
+  "ex-musica": "bilder/icons/ex-musica.webp",
+  "ex-pastelaria": "bilder/icons/ex-pastelaria.webp",
+  "ex-praia": "bilder/icons/ex-praia.webp",
+  "ex-zoo": "bilder/icons/ex-zoo.webp",
+  "ex-oceanario": "bilder/icons/ex-oceanario.webp",
+  "ex-aniversario": "bilder/icons/ex-aniversario.webp"
+ },
+ "sardinhas": {
+  "ola": "bilder/sardinhas/ola.webp",
+  "cores": "bilder/sardinhas/cores.webp",
+  "numeros": "bilder/sardinhas/numeros.webp",
+  "familia": "bilder/sardinhas/familia.webp",
+  "animais": "bilder/sardinhas/animais.webp",
+  "comer": "bilder/sardinhas/comer.webp",
+  "casa": "bilder/sardinhas/casa.webp",
+  "roupa": "bilder/sardinhas/roupa.webp",
+  "corpo": "bilder/sardinhas/corpo.webp",
+  "creche": "bilder/sardinhas/creche.webp",
+  "escola": "bilder/sardinhas/escola.webp",
+  "estacoes": "bilder/sardinhas/estacoes.webp",
+  "semana": "bilder/sardinhas/semana.webp",
+  "sentimentos": "bilder/sardinhas/sentimentos.webp",
+  "parque": "bilder/sardinhas/parque.webp",
+  "eletrico": "bilder/sardinhas/eletrico.webp",
+  "mercado": "bilder/sardinhas/mercado.webp",
+  "pastelaria": "bilder/sardinhas/pastelaria.webp",
+  "musica": "bilder/sardinhas/musica.webp",
+  "futebol": "bilder/sardinhas/futebol.webp",
+  "praia": "bilder/sardinhas/praia.webp",
+  "zoo": "bilder/sardinhas/zoo.webp",
+  "oceanario": "bilder/sardinhas/oceanario.webp",
+  "aniversario": "bilder/sardinhas/aniversario.webp",
+  "santos": "bilder/sardinhas/santos.webp"
+ },
+ "spiele": {
+  "pipo-corre": "bilder/spiele/pipo-corre.webp",
+  "pombo": "bilder/spiele/pombo.webp",
+  "vaso": "bilder/spiele/vaso.webp",
+  "sardinha": "bilder/spiele/sardinha.webp",
+  "fundo-rua": "bilder/spiele/fundo-rua.webp",
+  "gaivota": "bilder/spiele/gaivota.webp",
+  "pondi-cima": "bilder/spiele/pondi-cima.webp",
+  "pondi-baloica": "bilder/spiele/pondi-baloica.webp",
+  "banana": "bilder/spiele/banana.webp",
+  "copa": "bilder/spiele/copa.webp",
+  "fundo-parque": "bilder/spiele/fundo-parque.webp",
+  "lontra-nada": "bilder/spiele/lontra-nada.webp",
+  "medusa": "bilder/spiele/medusa.webp",
+  "concha": "bilder/spiele/concha.webp",
+  "estrela": "bilder/spiele/estrela.webp",
+  "fundo-oceano": "bilder/spiele/fundo-oceano.webp",
+  "papa-foto": "bilder/spiele/papa-foto.webp",
+  "mar-peixe": "bilder/spiele/mar-peixe.webp",
+  "mar-tubarao": "bilder/spiele/mar-tubarao.webp",
+  "mar-baleia": "bilder/spiele/mar-baleia.webp",
+  "mar-golfinho": "bilder/spiele/mar-golfinho.webp",
+  "mar-polvo": "bilder/spiele/mar-polvo.webp",
+  "mar-foca": "bilder/spiele/mar-foca.webp",
+  "mar-lontra": "bilder/spiele/mar-lontra.webp",
+  "mar-pinguim": "bilder/spiele/mar-pinguim.webp",
+  "mar-caranguejo": "bilder/spiele/mar-caranguejo.webp",
+  "mar-lagosta": "bilder/spiele/mar-lagosta.webp",
+  "mar-camarao": "bilder/spiele/mar-camarao.webp",
+  "mar-lula": "bilder/spiele/mar-lula.webp",
+  "pandi-espreita": "bilder/spiele/pandi-espreita.webp",
+  "arbusto": "bilder/spiele/arbusto.webp",
+  "banco": "bilder/spiele/banco.webp",
+  "caixote": "bilder/spiele/caixote.webp",
+  "laranjeira": "bilder/spiele/laranjeira.webp",
+  "fundo-esconde": "bilder/spiele/fundo-esconde.webp",
+  "carrinho-ada": "bilder/spiele/carrinho-ada.webp",
+  "carrinho-ines": "bilder/spiele/carrinho-ines.webp",
+  "carrinho-pedro": "bilder/spiele/carrinho-pedro.webp",
+  "carrinho-selma": "bilder/spiele/carrinho-selma.webp",
+  "carrinho-pondi": "bilder/spiele/carrinho-pondi.webp",
+  "carrinho-pipo": "bilder/spiele/carrinho-pipo.webp",
+  "casa-1": "bilder/spiele/casa-1.webp",
+  "casa-2": "bilder/spiele/casa-2.webp",
+  "casa-3": "bilder/spiele/casa-3.webp",
+  "candeeiro": "bilder/spiele/candeeiro.webp",
+  "fundo-colinas": "bilder/spiele/fundo-colinas.webp",
+  "arvore": "bilder/spiele/arvore.webp",
+  "arvore-jacaranda": "bilder/spiele/arvore-jacaranda.webp",
+  "fundo-relva": "bilder/spiele/fundo-relva.webp",
+  "mar-peixe-lua": "bilder/spiele/mar-peixe-lua.webp",
+  "pipo-folha-corre": "bilder/spiele/pipo-folha-corre.webp",
+  "pipo-folha-salto": "bilder/spiele/pipo-folha-salto.webp",
+  "pondi-folha": "bilder/spiele/pondi-folha.webp",
+  "lontra-folha": "bilder/spiele/lontra-folha.webp",
+  "nata": "bilder/spiele/nata.webp",
+  "nuvem-magica": "bilder/spiele/nuvem-magica.webp",
+  "bola": "bilder/spiele/bola.webp",
+  "esconde-quadro": "bilder/spiele/esconde-quadro.webp",
+  "esconde-quadro-2": "bilder/spiele/esconde-quadro-2.webp",
+  "esconde-quadro-3": "bilder/spiele/esconde-quadro-3.webp",
+  "mar-peixe-palhaco": "bilder/spiele/mar-peixe-palhaco.webp",
+  "mar-cavalo-marinho": "bilder/spiele/mar-cavalo-marinho.webp",
+  "mar-alforreca": "bilder/spiele/mar-alforreca.webp",
+  "mar-estrela-do-mar": "bilder/spiele/mar-estrela-do-mar.webp",
+  "mar-tartaruga": "bilder/spiele/mar-tartaruga.webp",
+  "mar-raia": "bilder/spiele/mar-raia.webp",
+  "mar-ourico-do-mar": "bilder/spiele/mar-ourico-do-mar.webp",
+  "mar-moreia": "bilder/spiele/mar-moreia.webp",
+  "mar-peixe-balao": "bilder/spiele/mar-peixe-balao.webp",
+  "mar-sardinha": "bilder/spiele/mar-sardinha.webp",
+  "banana-dourada": "bilder/spiele/banana-dourada.webp",
+  "papagaio": "bilder/spiele/papagaio.webp",
+  "papagaio-banana": "bilder/spiele/papagaio-banana.webp",
+  "pandi-cesto": "bilder/spiele/pandi-cesto.webp",
+  "cesto-cheio": "bilder/spiele/cesto-cheio.webp",
+  "carrinho-pandi": "bilder/spiele/carrinho-pandi.webp",
+  "lili": "bilder/spiele/lili.webp",
+  "nuvem": "bilder/spiele/nuvem.webp",
+  "nuvem-chuva": "bilder/spiele/nuvem-chuva.webp",
+  "presente": "bilder/spiele/presente.webp",
+  "presente-dourado": "bilder/spiele/presente-dourado.webp",
+  "trampolim": "bilder/spiele/trampolim.webp",
+  "casa-vazia": "bilder/spiele/casa-vazia.webp",
+  "movel-cama": "bilder/spiele/movel-cama.webp",
+  "movel-armario": "bilder/spiele/movel-armario.webp",
+  "movel-caixa": "bilder/spiele/movel-caixa.webp",
+  "movel-televisao": "bilder/spiele/movel-televisao.webp",
+  "movel-candeeiro": "bilder/spiele/movel-candeeiro.webp",
+  "movel-relogio": "bilder/spiele/movel-relogio.webp",
+  "movel-telefone": "bilder/spiele/movel-telefone.webp",
+  "movel-mesa": "bilder/spiele/movel-mesa.webp",
+  "movel-cadeira": "bilder/spiele/movel-cadeira.webp",
+  "movel-espelho": "bilder/spiele/movel-espelho.webp",
+  "deco-sofa": "bilder/spiele/deco-sofa.webp",
+  "deco-planta": "bilder/spiele/deco-planta.webp",
+  "movel-flor": "bilder/spiele/movel-flor.webp",
+  "porta-manha": "bilder/spiele/porta-manha.webp",
+  "porta-tarde": "bilder/spiele/porta-tarde.webp",
+  "porta-noite": "bilder/spiele/porta-noite.webp",
+  "visita-ines": "bilder/spiele/visita-ines.webp",
+  "visita-avo": "bilder/spiele/visita-avo.webp",
+  "visita-avoo": "bilder/spiele/visita-avoo.webp",
+  "visita-rute": "bilder/spiele/visita-rute.webp",
+  "casa-ada": "bilder/spiele/casa-ada.webp",
+  "casa-pedro": "bilder/spiele/casa-pedro.webp",
+  "bolo-prato": "bilder/spiele/bolo-prato.webp",
+  "visita-rute-adeus": "bilder/spiele/visita-rute-adeus.webp",
+  "visita-ines-adeus": "bilder/spiele/visita-ines-adeus.webp",
+  "mercado-banca": "bilder/spiele/mercado-banca.webp",
+  "cesto": "bilder/spiele/cesto.webp",
+  "limao": "bilder/spiele/limao.webp",
+  "saco-limoes": "bilder/spiele/saco-limoes.webp",
+  "tomate": "bilder/spiele/tomate.webp",
+  "maca": "bilder/spiele/maca.webp",
+  "saco-tomates": "bilder/spiele/saco-tomates.webp",
+  "saco-macas": "bilder/spiele/saco-macas.webp",
+  "quinta-fundo": "bilder/spiele/quinta-fundo.webp",
+  "animal-vaca": "bilder/spiele/animal-vaca.webp",
+  "animal-porco": "bilder/spiele/animal-porco.webp",
+  "animal-cavalo": "bilder/spiele/animal-cavalo.webp",
+  "animal-ovelha": "bilder/spiele/animal-ovelha.webp",
+  "animal-cabra": "bilder/spiele/animal-cabra.webp",
+  "animal-burro": "bilder/spiele/animal-burro.webp",
+  "animal-galinha": "bilder/spiele/animal-galinha.webp",
+  "animal-galo": "bilder/spiele/animal-galo.webp",
+  "animal-pato": "bilder/spiele/animal-pato.webp",
+  "animal-pintainho": "bilder/spiele/animal-pintainho.webp",
+  "animal-ganso": "bilder/spiele/animal-ganso.webp",
+  "animal-gato": "bilder/spiele/animal-gato.webp",
+  "animal-coelho": "bilder/spiele/animal-coelho.webp",
+  "cozinha-mesa": "bilder/spiele/cozinha-mesa.webp",
+  "pondi-boneco": "bilder/spiele/pondi-boneco.webp",
+  "quarto-sol": "bilder/spiele/quarto-sol.webp",
+  "quarto-frio": "bilder/spiele/quarto-frio.webp",
+  "quarto-chuva": "bilder/spiele/quarto-chuva.webp",
+  "quarto-praia": "bilder/spiele/quarto-praia.webp",
+  "quarto-noite": "bilder/spiele/quarto-noite.webp",
+  "veste-t-shirt": "bilder/spiele/veste-t-shirt.webp",
+  "veste-calcas": "bilder/spiele/veste-calcas.webp",
+  "veste-vestido": "bilder/spiele/veste-vestido.webp",
+  "veste-calcoes": "bilder/spiele/veste-calcoes.webp",
+  "veste-meias": "bilder/spiele/veste-meias.webp",
+  "veste-sapatos": "bilder/spiele/veste-sapatos.webp",
+  "veste-casaco": "bilder/spiele/veste-casaco.webp",
+  "veste-camisola": "bilder/spiele/veste-camisola.webp",
+  "veste-cachecol": "bilder/spiele/veste-cachecol.webp",
+  "veste-luva": "bilder/spiele/veste-luva.webp",
+  "veste-chapeu": "bilder/spiele/veste-chapeu.webp",
+  "veste-botas": "bilder/spiele/veste-botas.webp",
+  "veste-tenis": "bilder/spiele/veste-tenis.webp",
+  "veste-oculos": "bilder/spiele/veste-oculos.webp",
+  "veste-guarda-chuva": "bilder/spiele/veste-guarda-chuva.webp",
+  "veste-bone": "bilder/spiele/veste-bone.webp",
+  "veste-pijama": "bilder/spiele/veste-pijama.webp",
+  "veste-oculos-de-sol": "bilder/spiele/veste-oculos-de-sol.webp",
+  "veste-fato-de-banho": "bilder/spiele/veste-fato-de-banho.webp",
+  "veste-chinelos": "bilder/spiele/veste-chinelos.webp",
+  "veste-lenco": "bilder/spiele/veste-lenco.webp",
+  "eletrico": "bilder/spiele/eletrico.webp",
+  "destino-castelo": "bilder/spiele/destino-castelo.webp",
+  "destino-praia": "bilder/spiele/destino-praia.webp",
+  "destino-mercado": "bilder/spiele/destino-mercado.webp",
+  "destino-escola": "bilder/spiele/destino-escola.webp",
+  "destino-igreja": "bilder/spiele/destino-igreja.webp",
+  "destino-parque": "bilder/spiele/destino-parque.webp",
+  "destino-rio": "bilder/spiele/destino-rio.webp",
+  "pondi-frio-1": "bilder/spiele/pondi-frio-1.webp",
+  "pondi-frio-2": "bilder/spiele/pondi-frio-2.webp",
+  "pondi-frio-3": "bilder/spiele/pondi-frio-3.webp",
+  "pondi-frio-4": "bilder/spiele/pondi-frio-4.webp",
+  "pondi-chuva-1": "bilder/spiele/pondi-chuva-1.webp",
+  "pondi-chuva-2": "bilder/spiele/pondi-chuva-2.webp",
+  "pondi-chuva-3": "bilder/spiele/pondi-chuva-3.webp",
+  "pondi-praia-1": "bilder/spiele/pondi-praia-1.webp",
+  "pondi-praia-2": "bilder/spiele/pondi-praia-2.webp",
+  "pondi-praia-3": "bilder/spiele/pondi-praia-3.webp",
+  "pondi-praia-4": "bilder/spiele/pondi-praia-4.webp",
+  "pondi-sol-1": "bilder/spiele/pondi-sol-1.webp",
+  "pondi-sol-2": "bilder/spiele/pondi-sol-2.webp",
+  "pondi-sol-3": "bilder/spiele/pondi-sol-3.webp",
+  "pondi-sol-4": "bilder/spiele/pondi-sol-4.webp",
+  "pondi-sol-5": "bilder/spiele/pondi-sol-5.webp",
+  "pondi-noite-1": "bilder/spiele/pondi-noite-1.webp",
+  "pondi-frio-5": "bilder/spiele/pondi-frio-5.webp",
+  "pondi-frio-6": "bilder/spiele/pondi-frio-6.webp",
+  "pondi-festa-1": "bilder/spiele/pondi-festa-1.webp",
+  "pondi-festa-2": "bilder/spiele/pondi-festa-2.webp",
+  "pondi-festa-3": "bilder/spiele/pondi-festa-3.webp",
+  "veste-flor": "bilder/spiele/veste-flor.webp",
+  "monstro-corpo": "bilder/spiele/monstro-corpo.webp",
+  "monstro-olho": "bilder/spiele/monstro-olho.webp",
+  "monstro-nariz": "bilder/spiele/monstro-nariz.webp",
+  "monstro-boca": "bilder/spiele/monstro-boca.webp",
+  "monstro-orelha": "bilder/spiele/monstro-orelha.webp",
+  "monstro-braco": "bilder/spiele/monstro-braco.webp",
+  "monstro-perna": "bilder/spiele/monstro-perna.webp",
+  "monstro-cabelo": "bilder/spiele/monstro-cabelo.webp",
+  "pandi-aponta": "bilder/spiele/pandi-aponta.webp",
+  "monstro-teile": "bilder/spiele/monstro-teile.webp",
+  "monstro-corpo2": "bilder/spiele/monstro-corpo2.webp",
+  "monstro-fundo": "bilder/spiele/monstro-fundo.webp",
+  "gast-selma": "bilder/spiele/gast-selma.webp",
+  "creche-wimmel": "bilder/spiele/creche-wimmel.webp",
+  "creche-arrumado": "bilder/spiele/creche-arrumado.webp",
+  "creche-bola": "bilder/spiele/creche-bola.webp",
+  "creche-boneca": "bilder/spiele/creche-boneca.webp",
+  "creche-carrinho": "bilder/spiele/creche-carrinho.webp",
+  "creche-blocos": "bilder/spiele/creche-blocos.webp",
+  "creche-puzzle": "bilder/spiele/creche-puzzle.webp",
+  "creche-balde": "bilder/spiele/creche-balde.webp",
+  "creche-pa": "bilder/spiele/creche-pa.webp",
+  "creche-triciclo": "bilder/spiele/creche-triciclo.webp",
+  "creche-babete": "bilder/spiele/creche-babete.webp",
+  "creche-fruta": "bilder/spiele/creche-fruta.webp",
+  "gast-pedro": "bilder/spiele/gast-pedro.webp",
+  "escola-quarto": "bilder/spiele/escola-quarto.webp",
+  "escola-sala": "bilder/spiele/escola-sala.webp",
+  "escola-mochila": "bilder/spiele/escola-mochila.webp",
+  "escola-estojo": "bilder/spiele/escola-estojo.webp",
+  "escola-livro": "bilder/spiele/escola-livro.webp",
+  "escola-caderno": "bilder/spiele/escola-caderno.webp",
+  "escola-lapis": "bilder/spiele/escola-lapis.webp",
+  "escola-caneta": "bilder/spiele/escola-caneta.webp",
+  "escola-borracha": "bilder/spiele/escola-borracha.webp",
+  "escola-tesoura": "bilder/spiele/escola-tesoura.webp",
+  "escola-regua": "bilder/spiele/escola-regua.webp",
+  "escola-cola": "bilder/spiele/escola-cola.webp",
+  "escola-banana": "bilder/spiele/escola-banana.webp",
+  "escola-pato": "bilder/spiele/escola-pato.webp",
+  "escola-meia": "bilder/spiele/escola-meia.webp",
+  "gast-ada": "bilder/spiele/gast-ada.webp",
+  "gast-leo": "bilder/spiele/gast-leo.webp",
+  "escola-sala2": "bilder/spiele/escola-sala2.webp",
+  "tempo-estudio": "bilder/spiele/tempo-estudio.webp",
+  "tempo-lisboa": "bilder/spiele/tempo-lisboa.webp",
+  "tempo-porto": "bilder/spiele/tempo-porto.webp",
+  "tempo-faro": "bilder/spiele/tempo-faro.webp",
+  "tempo-serra": "bilder/spiele/tempo-serra.webp",
+  "tempo-sol": "bilder/spiele/tempo-sol.webp",
+  "tempo-chuva": "bilder/spiele/tempo-chuva.webp",
+  "tempo-neve": "bilder/spiele/tempo-neve.webp",
+  "tempo-vento": "bilder/spiele/tempo-vento.webp",
+  "tempo-nuvem": "bilder/spiele/tempo-nuvem.webp",
+  "tempo-trovoada": "bilder/spiele/tempo-trovoada.webp",
+  "tempo-nevoeiro": "bilder/spiele/tempo-nevoeiro.webp",
+  "tempo-quente": "bilder/spiele/tempo-quente.webp",
+  "tempo-frio": "bilder/spiele/tempo-frio.webp",
+  "tempo-mapa": "bilder/spiele/tempo-mapa.webp",
+  "semana-quadro": "bilder/spiele/semana-quadro.webp",
+  "gast-papa": "bilder/spiele/gast-papa.webp",
+  "sent-pandi": "bilder/spiele/sent-pandi.webp",
+  "fundo-rio": "bilder/spiele/fundo-rio.webp",
+  "tram-pombos": "bilder/spiele/tram-pombos.webp",
+  "tram-carro": "bilder/spiele/tram-carro.webp",
+  "tram-policia": "bilder/spiele/tram-policia.webp",
+  "esc-parque": "bilder/spiele/esc-parque.webp",
+  "esc-fonte": "bilder/spiele/esc-fonte.webp",
+  "esc-quiosque": "bilder/spiele/esc-quiosque.webp",
+  "esc-mesa": "bilder/spiele/esc-mesa.webp",
+  "esc-pipo": "bilder/spiele/esc-pipo.webp",
+  "esc-pondi": "bilder/spiele/esc-pondi.webp",
+  "esc-pandi": "bilder/spiele/esc-pandi.webp",
+  "cam-cruzamento": "bilder/spiele/cam-cruzamento.webp",
+  "cam-castelo": "bilder/spiele/cam-castelo.webp",
+  "cam-grupo": "bilder/spiele/cam-grupo.webp",
+  "gast-mama": "bilder/spiele/gast-mama.webp",
+  "lista-banca": "bilder/spiele/lista-banca.webp",
+  "gomas-cavaquinho": "bilder/spiele/gomas-cavaquinho.webp",
+  "def-campo": "bilder/spiele/def-campo.webp",
+  "def-selma-pronta": "bilder/spiele/def-selma-pronta.webp",
+  "def-selma-lado": "bilder/spiele/def-selma-lado.webp",
+  "def-selma-meio": "bilder/spiele/def-selma-meio.webp",
+  "def-selma-falha": "bilder/spiele/def-selma-falha.webp",
+  "mus-palco": "bilder/spiele/mus-palco.webp",
+  "gast-elli": "bilder/spiele/gast-elli.webp",
+  "gast-michi": "bilder/spiele/gast-michi.webp",
+  "past-balcao": "bilder/spiele/past-balcao.webp",
+  "praia-manta": "bilder/spiele/praia-manta.webp",
+  "zoo-caminho": "bilder/spiele/zoo-caminho.webp",
+  "oce-tanque": "bilder/spiele/oce-tanque.webp",
+  "velas-jardim": "bilder/spiele/velas-jardim.webp"
+ }
+}

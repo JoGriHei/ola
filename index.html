@@ -879,13 +879,28 @@ function ptVoice() {
   return (vs.find(x => x.l === 'pt-pt') || {}).v || null;
 }
 if (hasTTS) { try { speechSynthesis.getVoices(); speechSynthesis.onvoiceschanged = () => { if (V.name === 'profiles') render(); }; } catch (e) {} }
+// Was das Kind antippt, darf einen laufenden Satz unterbrechen. Sätze, die von selbst kommen (Zeitgeber, nächster Schritt),
+// warten, bis der laufende Satz zu Ende ist: sonst brechen Sätze ab („Muito bem! Para a caixa!“ → nächste Frage).
+let inTap = false, sayWait = 0, sayQueued = false;
+for (const ev of ['pointerdown', 'pointerup', 'click', 'keydown', 'touchend']) addEventListener(ev, () => { inTap = true; setTimeout(() => { inTap = false; }, 0); }, true);
+const speaking = () => { try { return !!((player && !player.paused && !player.ended) || (hasTTS && (speechSynthesis.speaking || speechSynthesis.pending))); } catch (e) { return false; } };
+const voiceBusy = () => sayQueued || speaking(); // spricht noch jemand oder wartet ein Satz?
 function stopSound() {
   playId++;
+  clearTimeout(sayWait); sayQueued = false;
   try { if (player) { player.pause(); } } catch (e) {}
   try { if (clip && clipRun) { clip.pause(); clipRun = false; } } catch (e) {}
   try { if (hasTTS) speechSynthesis.cancel(); } catch (e) {}
 }
+// opts.cut: unterbricht immer (Spiele). Sonst unterbricht nur, was beim Antippen gesprochen wird; alles andere wartet
+// (höchstens 6 s, es wartet immer nur der letzte Satz).
 function say(text, opts = {}) {
+  if (!inTap && !opts.cut && !opts.waited && speaking()) {
+    clearTimeout(sayWait); sayQueued = true;
+    const wid = playId, t0 = Date.now();
+    const poll = () => { if (wid !== playId) return; if (speaking() && Date.now() - t0 < 6000) sayWait = setTimeout(poll, 60); else say(text, { ...opts, waited: true }); };
+    sayWait = setTimeout(poll, 60); return;
+  }
   stopSound();
   const id = playId;
   let ended = false;
@@ -2364,7 +2379,7 @@ function startTempo(id) {
   const temps = ['quente', 'frio'].every(knowsWord) ? shuffle(places).slice(0, 2).map(l => ({ kind: 'temp', l, w: TEMPO_LUGAR[l].t, glow: true })) : [];
   const hoje = [...day(4, true), ...temps], amanha = day(3, false);
   const tasks = hoje.map(t => ({ ...t, opts: tempoOpts(t, ws) }));
-  go({ name: 'tempo', id, tasks, amanha: amanha.map(t => ({ ...t, opts: tempoOpts(t, ws) })), n: 0, set: {}, temp: {}, phase: 'hoje', sel: null, wrong: null,
+  go({ name: 'tempo', id, ws, tasks, amanha: amanha.map(t => ({ ...t, opts: tempoOpts(t, ws) })), n: 0, set: {}, temp: {}, phase: 'hoje', sel: null, wrong: null,
     miss: 0, glow: false, stars: 0, busy: false, done: false, selma: null, locked: ws.length < 3 || hoje.length < 3 });
   if (!V.locked) { const v = V; say('Olá! Este é o boletim do tempo!', { onend: () => { if (V === v && !v.asked) { v.asked = true; tempoAsk(); } } });
     setTimeout(() => { if (V === v && !v.asked) { v.asked = true; tempoAsk(); } }, 2800); }
@@ -2387,10 +2402,11 @@ function tempoNext() {
   const v = V;
   if (v.n < v.tasks.length) { render(); tempoAsk(); return; }
   if (v.phase === 'hoje') {
-    // Selma klebt heimlich ein falsches Symbol auf einen Ort
-    const l = Object.keys(v.set).find(x => x === 'faro' || x === 'serra') || Object.keys(v.set)[0];
-    const bad = l === 'serra' ? 'sol' : 'neve';
-    if (l && knowsWord(TEMPO_W[bad][0])) {
+    // Selma klebt heimlich ein falsches Symbol auf einen Ort: jedes Mal ein anderer Ort und ein anderes Wetter,
+    // aber nie das, was dort schon richtig klebt (sonst wäre es kein Streich)
+    const l = pick(Object.keys(v.set));
+    const bad = l && pick(v.ws.filter(w => w !== v.set[l]));
+    if (l && bad) {
       // 1. Selma kommt mit dem falschen Symbol, 2. es fliegt auf den Ort, 3. Ada sagt, was falsch ist
       v.phase = 'selma'; v.selma = { l, bad, was: v.set[l], stage: 'come' }; render(); sfx('pop');
       say('Eu também quero ajudar!');
@@ -2596,10 +2612,11 @@ function crechePick(w, e) {
   const v = V, t = v.tasks[v.n]; if (!t || v.busy || v.done) return; v.asked = true;
   if (w !== t.w) return crecheMiss(e);
   v.busy = true; v.glow = false; v.bad = null; v.stars += v.miss ? 0 : 1; v.miss = 0; v.fly = t.w; sfx('collect'); render();
-  say(t.box ? 'Muito bem! Para a caixa!' : 'Muito bem!');
-  setTimeout(() => { if (V !== v) return; v.fly = null; v.gone.push(t.w); v.busy = false; v.n++;
+  // weiter erst, wenn die Sache weggeflogen ist (1,5 s) und Pedro ausgeredet hat
+  const t0 = Date.now();
+  camSay(v, t.box ? 'Muito bem! Para a caixa!' : 'Muito bem!', 2500, () => setTimeout(() => { if (V !== v) return; v.fly = null; v.gone.push(t.w); v.busy = false; v.n++;
     if (v.n >= v.tasks.length) { v.done = true; render(); sfx('confetti'); say('Está tudo arrumado!'); }
-    else { render(); crecheAsk(); } }, 1500);
+    else { render(); crecheAsk(); } }, Math.max(0, 1500 - (Date.now() - t0))));
 }
 function crecheMiss(e) {
   const v = V; if (!v.tasks[v.n] || v.busy || v.done) return; v.asked = true;
@@ -2752,7 +2769,13 @@ const CAM_INTRO = ['Pai, o mapa está ao contrário!', 'Eu conheço o caminho! V
 const camCap = s => s[0].toUpperCase() + s.slice(1);
 const camArrow = rot => `<svg viewBox="0 0 100 100" aria-hidden="true"><g transform="rotate(${rot} 50 50)"><path d="M50 7 89 47H66V93H34V47H11Z" fill="#62c24c" stroke="#2c7a2a" stroke-width="6" stroke-linejoin="round"/></g></svg>`;
 // Satz sprechen, danach (oder spätestens nach max ms) weiter, aber nur einmal und nur, wenn die Übung noch offen ist
-function camSay(v, text, max, cb) { let f = false; const next = () => { if (f || V !== v) return; f = true; cb(); }; say(text, { onend: next }); setTimeout(next, max); }
+// (max ist nur die Notbremse, falls das Ende des Satzes nicht gemeldet wird: solange noch gesprochen wird, wartet sie weiter)
+function camSay(v, text, max, cb) {
+  let f = false; const t0 = Date.now(), next = () => { if (f || V !== v) return; f = true; cb(); };
+  say(text, { onend: next });
+  const guard = () => { if (f || V !== v) return; if (voiceBusy() && Date.now() - t0 < max + 8000) setTimeout(guard, 150); else next(); };
+  setTimeout(guard, max);
+}
 function startCam(id) {
   const dirs = Object.keys(CAM_DIR).filter(knowsWord), lugs = CAM_LUG.filter(knowsWord), locked = dirs.length < 2, tasks = [];
   if (!locked) {
@@ -3296,6 +3319,8 @@ views.def = () => {
 const MUS = { 'o piano': ['piano', 'É o piano!'], 'o tambor': ['tambor', 'É o tambor!'], 'a flauta': ['flauta', 'É a flauta!'], 'o violino': ['violino', 'É o violino!'],
   'o trompete': ['trompete', 'É o trompete!'], 'o cavaquinho': ['cavaquinho', 'É o cavaquinho!'], 'as maracas': ['maracas', 'São as maracas!'], 'a guitarra': ['guitarra', 'É a guitarra!'] };
 const MUS_INTRO = 'Vamos fazer música!', MUS_FIM = 'Bravo! Que concerto!', MUS_OUTRA = 'Outra vez!';
+// Bewegung, die beim Neuzeichnen nicht von vorn beginnt: nur solange sie läuft (ms seit t), und an derselben Stelle fortgesetzt
+const animAt = (t, ms) => { const d = Date.now() - (t || 0); return d >= 0 && d < ms ? `animation-delay:-${d}ms` : ''; };
 const MUS_LUGAR = [[26, 62], [42, 62], [58, 62], [74, 62], [26, 92], [42, 92], [58, 92], [74, 92]]; // Standplätze auf der Bühne (%, Fußpunkt)
 function startMus(id) {
   const insts = shuffle(Object.keys(MUS).filter(knowsWord)), locked = insts.length < 3, tasks = [];
@@ -3305,7 +3330,7 @@ function startMus(id) {
     tasks.push(...[0, 1].map(() => { const w = um(); return { kind: 'palavra', r: w, q: `Toca ${w}!` }; }), ...[0, 1].map(() => ({ kind: 'som', r: um(), q: 'O que é isto?' })),
       ...[2, 3, 3, 4].map(n => ({ kind: 'seq', seq: seq(n), q: 'Agora ouve bem!' })));
   }
-  go({ name: 'mus', id, tasks, insts, n: 0, pos: 0, miss: 0, glow: false, ajuda: false, luz: null, wrong: null, toque: null, hit: false, stars: 0, busy: true, done: false, locked, intro: !locked });
+  go({ name: 'mus', id, tasks, insts, n: 0, pos: 0, miss: 0, glow: false, ajuda: false, luz: null, wrong: null, toque: null, hit: false, stars: 0, busy: true, done: false, locked, intro: !locked, falaT: Date.now() });
   if (locked) return;
   const v = V;
   camSay(v, MUS_INTRO, 3500, () => { v.intro = false; render(); musAsk(v); });
@@ -3318,35 +3343,35 @@ function musToca(v, lista, luz) {
 }
 function musAsk(v) {
   const t = v.tasks[v.n]; if (!t || V !== v) return;
-  v.busy = true; v.pos = 0; render();
+  v.busy = true; v.pos = 0; v.falaT = Date.now(); render();
   camSay(v, t.q, 3500, () => { if (t.kind === 'palavra') { v.busy = false; render(); } else musToca(v, t.kind === 'som' ? [t.r] : t.seq, v.ajuda); });
 }
 function musNext(v) {
   if (V !== v) return;
   v.hit = false; v.glow = false; v.ajuda = false; v.miss = 0; v.pos = 0; v.toque = null; v.nome = null; v.luz = null; v.n++;
-  if (v.n >= v.tasks.length) { v.done = true; render(); sfx('aplauso'); say(MUS_FIM); } else musAsk(v);
+  if (v.n >= v.tasks.length) { v.done = true; v.falaT = Date.now(); render(); sfx('aplauso'); say(MUS_FIM); } else musAsk(v);
 }
 // nach einer geschafften Tonfolge: die Namen der Instrumente in der gespielten Reihenfolge (sonst hört das Kind hier keine Vokabeln)
 function musNomes(v, lista, i) {
   if (V !== v) return;
   if (i >= lista.length) { v.luz = null; v.nome = null; render(); setTimeout(() => musNext(v), 500); return; }
-  v.luz = v.nome = lista[i]; v.toque = null; render();
+  v.luz = v.nome = lista[i]; v.toque = null; v.falaT = Date.now(); render();
   camSay(v, lista[i], 2500, () => setTimeout(() => musNomes(v, lista, i + 1), 150));
 }
 function musPick(w) {
   const v = V, t = v.tasks[v.n]; if (!t || v.busy || v.done) return;
   const tap = v.tap = (v.tap || 0) + 1; if (v.nome) { v.nome = null; stopSound(); }
-  sfx('instr-' + MUS[w][0]); v.toque = w;
+  sfx('instr-' + MUS[w][0]); v.toque = w; v.toqueT = Date.now();
   if (w !== (t.kind === 'seq' ? t.seq[v.pos] : t.r)) { // falsch: das Instrument erklingt trotzdem, dann geht es noch einmal von vorn los
     v.busy = true; v.wrong = w; v.miss++; v.pos = 0; if (t.kind === 'seq') v.ajuda = true; else if (v.miss >= 2) v.glow = true; render();
     setTimeout(() => { if (V !== v) return; v.wrong = null; v.toque = null; sfx('honk'); render(); }, 900);
-    setTimeout(() => { if (V !== v) return; if (t.kind === 'seq') camSay(v, MUS_OUTRA, 2500, () => musToca(v, t.seq, true)); else musAsk(v); }, 1500);
+    setTimeout(() => { if (V !== v) return; if (t.kind === 'seq') { v.falaT = Date.now(); render(); camSay(v, MUS_OUTRA, 2500, () => musToca(v, t.seq, true)); } else musAsk(v); }, 1500);
     return; }
   if (t.kind === 'seq' && ++v.pos < t.seq.length) { render();
-    setTimeout(() => { if (V !== v || v.tap !== tap || v.busy) return; v.nome = w; render(); say(w, { onend: () => { if (V === v && v.tap === tap) { v.nome = null; render(); } } }); }, 1000);
+    setTimeout(() => { if (V !== v || v.tap !== tap || v.busy) return; v.nome = w; v.falaT = Date.now(); render(); say(w, { onend: () => { if (V === v && v.tap === tap) { v.nome = null; render(); } } }); }, 1000);
     return; }
   v.busy = true; v.hit = true; v.stars += v.miss ? 0 : 1; render();
-  setTimeout(() => { if (V !== v) return; sfx('collect'); if (t.kind === 'som') camSay(v, MUS[t.r][1], 3000, () => musNext(v)); else if (t.kind === 'seq') setTimeout(() => musNomes(v, t.seq, 0), 500); else setTimeout(() => musNext(v), 800); }, 1000);
+  setTimeout(() => { if (V !== v) return; sfx('collect'); if (t.kind === 'som') { v.falaT = Date.now(); render(); camSay(v, MUS[t.r][1], 3000, () => musNext(v)); } else if (t.kind === 'seq') setTimeout(() => musNomes(v, t.seq, 0), 500); else setTimeout(() => musNext(v), 800); }, 1000);
 }
 views.mus = () => {
   const back = `<button class="round" data-act="lesson" data-arg="${V.id}" aria-label="Zurück zur Lektion">←</button>`;
@@ -3358,7 +3383,8 @@ views.mus = () => {
   const text = done ? MUS_FIM : v.intro ? MUS_INTRO : kind === 'som' && v.hit ? MUS[t.r][1] : v.nome || t.q;
   // wenige Instrumente stehen vorn in einer Reihe, sonst in zwei Reihen
   const plaetze = v.insts.length <= 4 ? MUS_LUGAR.slice(4).map(p => [p[0], 86]) : MUS_LUGAR;
-  const palco = v.insts.map((w, i) => `<button class="minst ${v.wrong === w ? 'bad' : ''} ${(v.glow && w === t.r) || v.luz === w ? 'luz' : ''} ${v.toque === w ? 'toque' : ''}" data-act="musPick" data-arg="${esc(w)}" style="left:${plaetze[i][0]}%;top:${plaetze[i][1]}%" aria-label="${esc(w)}"><img src="${esc(B_SPRITE('mus-' + MUS[w][0]))}" alt="">${reader ? `<span class="clabel">${esc(w)}</span>` : ''}</button>`).join('');
+  const hop = animAt(v.falaT, 700), toque = animAt(v.toqueT, 300);
+  const palco = v.insts.map((w, i) => `<button class="minst ${v.wrong === w ? 'bad' : ''} ${(v.glow && w === t.r) || v.luz === w ? 'luz' : ''} ${v.toque === w && toque ? 'toque' : ''}" data-act="musPick" data-arg="${esc(w)}" style="left:${plaetze[i][0]}%;top:${plaetze[i][1]}%" aria-label="${esc(w)}"><img src="${esc(B_SPRITE('mus-' + MUS[w][0]))}" style="${v.toque === w ? toque : ''}" alt="">${reader ? `<span class="clabel">${esc(w)}</span>` : ''}</button>`).join('');
   const notas = kind === 'seq' ? `<div class="mnotas">${t.seq.map((_, i) => `<i class="${i < v.pos ? 'ok' : ''}">🎵</i>`).join('')}</div>` : '';
   return `
   <div class="bar">${back}<div class="track"><i style="width:${Math.round(100 * v.n / v.tasks.length)}%"></i></div>${deBtn()}</div>
@@ -3367,7 +3393,7 @@ views.mus = () => {
     <div class="door ${done ? 'party' : ''} ${v.busy && !done ? 'ouve' : ''}" id="mus">
       <img class="bg" src="${esc(B_SPRITE('mus-palco'))}" alt="">
       ${palco}${notas}
-      <img class="mrute hop" src="${esc(B_SPRITE('gast-rute'))}" alt="">
+      <img class="mrute ${hop ? 'hop' : ''}" src="${esc(B_SPRITE('gast-rute'))}" style="${hop}" alt="">
       <button class="say csay" data-act="musRepeat" aria-label="Nochmal hören">🔊${reader ? ' ' + esc(text) : ''}</button>
       ${done ? '<i class="confetti"></i>' : ''}
     </div>
@@ -3845,12 +3871,14 @@ function startGame(v) {
   if (!el || v.started) return;
   v.started = true;
   const api = {
-    words: gameWords(), reader: !!P().reader, say: (t, o) => say(t, o || {}), stop: stopSound,
+    // in Spielen unterbricht ein neuer Satz den laufenden wie bisher (cut), dort zählt das Tempo
+    words: gameWords(), reader: !!P().reader, say: (t, o) => say(t, { ...(o || {}), cut: true }), stop: stopSound,
     // eine bestimmte Aufnahme abspielen (z. B. Papas Stimme), sonst den Text normal sprechen
     sayFile: (url, text) => {
       stopSound();
-      if (!player) return say(text);
-      try { player.onended = null; player.onerror = () => say(text); player.src = url; player.playbackRate = 1; const pr = player.play(); if (pr && pr.catch) pr.catch(() => say(text)); } catch (e) { say(text); }
+      const tts = () => say(text, { cut: true });
+      if (!player) return tts();
+      try { player.onended = null; player.onerror = tts; player.src = url; player.playbackRate = 1; const pr = player.play(); if (pr && pr.catch) pr.catch(tts); } catch (e) { tts(); }
     },
     sprite: id => (media.spiele && media.spiele[id]) || null,
     figure: id => `bilder/figuren/${id}.webp`,
@@ -3878,7 +3906,8 @@ views.games = () => {
 const gameIcon = (g, small) => { const src = (media.icons && media.icons["spiel-" + g.id]) || (g.img && media.spiele && media.spiele[g.img]);
   return src ? `<img class="gimg${small ? ' sm' : ''}" src="${esc(src)}" alt="">` : (g.e || ''); };
 const introItem = (x, cls) => {
-  const src = media.spiele && media.spiele[x];
+  // Bildname (kein Emoji): aus media.json, sonst die Datei in bilder/spiele (Brustbilder wie gast-rute stehen nicht in media.json)
+  const src = /^[a-z][a-z0-9-]*$/.test(x) ? B_SPRITE(x) : null;
   return `<span class="it ${cls}">${src ? `<img src="${esc(src)}" alt="">` : esc(x)}<b>${cls === 'good' ? '✅' : '❌'}</b></span>`;
 };
 views.game = () => {

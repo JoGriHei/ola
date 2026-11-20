@@ -8,7 +8,9 @@
 // knallt es genau dort (💥 oder 💫, 💔 bei den Herzen) und das Spiel hält kurz an. Die Schlange wird mit jedem Gast
 // schneller. Ein Blumentopf steht von Anfang an auf der Wiese, ein zweiter kommt nach dem vierten Gast dazu.
 // Ziel: alle zwölf Gäste in der Schlange.
-// Steuern: wischen oder neben Rute tippen (Richtung von Rute aus), am Rechner auch Pfeiltasten.
+// Steuern: irgendwo im Bild wischen (zählt nur die Wischrichtung, nicht die Stelle) oder kurz neben Rute tippen (Richtung von
+// Rute aus, gewertet erst beim Loslassen ohne Bewegung), am Rechner auch Pfeiltasten. Bis zu zwei Richtungen werden vorgemerkt
+// (schnell um zwei Ecken); ist die gewünschte Richtung gerade versperrt, gilt sie noch zwei Schritte lang.
 // Eigenes Spiel mit eigenen Figuren; Test: _test?auto lässt Rute selbst laufen (window.OLA_FILA_AUTO).
 (() => {
   const base = () => window.OLA_PHASER ? Promise.resolve() : new Promise((ok, fail) => {
@@ -51,7 +53,8 @@
         this.stein = stein;
         const mc = COLS >> 1, mr = ROWS >> 1;
         this.schlange = [Object.assign(stein('rute', 0x7d3fc0, mc, mr), { ac: mc, ar: mr })]; // [Rute, dann die Gäste]; ac/ar = Kachel davor (fürs Gleiten)
-        this.dir = [1, 0]; this.want = null;
+        this.dir = [1, 0]; this.wants = []; // vorgemerkte Richtungen: [{ d, alt }], alt = so viele Schritte wartet sie schon
+        if (window.OLA_DEBUG) window.OLA_FILA_SZENE = this; // nur Testseite
         this.warten = Phaser.Utils.Array.Shuffle(GAESTE.map(([id, name, farbe]) => ({ id, name, farbe }))); // noch nicht in der Schlange
         this.stehen = []; // gerade auf der Wiese
         this.topf(); // ein Blumentopf steht von Anfang an da
@@ -63,9 +66,21 @@
         this.blase = this.add.text(W / 2, 24, '🔊', { fontFamily: 'sans-serif', fontSize: '22px', fontStyle: 'bold', color: '#1b4fa0' }).setOrigin(0.5).setDepth(102);
         this.add.zone(W / 2, 24, 300, 40).setInteractive({ useHandCursor: true }).setDepth(103).on('pointerdown', (p, x, y, ev) => { ev.stopPropagation(); this.rufen(); });
         const richtung = (dx, dy) => Math.abs(dx) > Math.abs(dy) ? [Math.sign(dx), 0] : [0, Math.sign(dy)];
-        this.input.on('pointerdown', p => { if (p.y < 46) return; this.ab = { x: p.x, y: p.y }; const k = this.schlange[0].cont, dx = p.x - k.x, dy = p.y - k.y; if (Math.hypot(dx, dy) > 20) this.want = richtung(dx, dy); });
-        this.input.on('pointermove', p => { if (!p.isDown || !this.ab) return; const dx = p.x - this.ab.x, dy = p.y - this.ab.y; if (Math.hypot(dx, dy) > 22) { this.want = richtung(dx, dy); this.ab = { x: p.x, y: p.y }; } });
-        this.input.keyboard && this.input.keyboard.on('keydown', e => { const d = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] }[e.key]; if (d) this.want = d; });
+        // Richtung vormerken: dieselbe noch einmal zählt nicht; das Gegenteil der zuletzt gemerkten ersetzt sie (das Kind verbessert sich)
+        const merken = d => { const q = this.wants, l = q.length ? q[q.length - 1].d : this.dir;
+          if (d[0] === l[0] && d[1] === l[1]) return;
+          if (q.length && d[0] === -l[0] && d[1] === -l[1]) q[q.length - 1] = { d, alt: 0 }; else if (q.length >= 2) q[1] = { d, alt: 0 }; else q.push({ d, alt: 0 }); };
+        // Finger aufsetzen legt noch nichts fest (sonst lief Rute erst zur Stelle des Fingers und dann in die Wischrichtung)
+        this.input.on('pointerdown', p => { if (p.y < 46) return; this.ab = { x: p.x, y: p.y, x0: p.x, y0: p.y, wisch: false }; });
+        // Wischen: ab 24 px in eine deutliche Richtung; danach zählt von dort aus weiter (ein Zug um die Ecke = zwei Richtungen)
+        this.input.on('pointermove', p => { const ab = this.ab; if (!p.isDown || !ab) return; const dx = p.x - ab.x, dy = p.y - ab.y, gross = Math.max(Math.abs(dx), Math.abs(dy)), klein = Math.min(Math.abs(dx), Math.abs(dy));
+          if (gross > 24 && gross > klein * 1.3) { merken(richtung(dx, dy)); ab.x = p.x; ab.y = p.y; ab.wisch = true; } else if (gross > 70) { ab.x = p.x; ab.y = p.y; } }); // lange genau schräg: neu ansetzen
+        // Loslassen: kurzer schneller Wisch (unter 24 px) zählt auch; ganz ohne Bewegung war es ein Tipp neben Rute
+        this.input.on('pointerup', p => { const ab = this.ab; this.ab = null; if (!ab || ab.wisch) return; const wx = p.x - ab.x0, wy = p.y - ab.y0;
+          if (Math.hypot(wx, wy) > 12) { merken(richtung(wx, wy)); return; }
+          const k = this.schlange[0].cont, dx = p.x - k.x, dy = p.y - k.y; if (Math.hypot(dx, dy) > 20) merken(richtung(dx, dy)); });
+        this.input.on('pointerupoutside', () => { this.ab = null; });
+        this.input.keyboard && this.input.keyboard.on('keydown', e => { const d = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] }[e.key]; if (d) merken(d); });
         if (this.cache.audio.exists('fila-musica')) { this.music = this.sound.add('fila-musica', { loop: true, volume: 0.22 }); this.music.play(); }
         this.api.say('Vamos dançar!');
         this.time.delayedCall(1700, () => { this.frozen = false; this.neuesZiel(); });
@@ -108,13 +123,19 @@
       }
       schritt() {
         const k = this.schlange[0], frei = d => d && !this.zu(k.c + d[0], k.r + d[1]), rueck = d => d[0] === -this.dir[0] && d[1] === -this.dir[1];
-        if (window.OLA_FILA_AUTO) this.want = this.auto() || this.want;
-        let d = this.want && !rueck(this.want) && frei(this.want) ? this.want : this.dir;
+        if (window.OLA_FILA_AUTO) { const a = this.auto(); if (a) this.wants = [{ d: a, alt: 0 }]; }
+        // vorgemerkte Richtung nehmen: rückwärts und „weiter geradeaus“ fallen weg; ist sie gerade versperrt (Hecke, Topf daneben),
+        // bleibt sie noch zwei Schritte gemerkt und Rute biegt ab, sobald dort frei ist
+        let d = this.dir;
+        while (this.wants.length) { const w = this.wants[0];
+          if (rueck(w.d) || (w.d[0] === this.dir[0] && w.d[1] === this.dir[1])) { this.wants.shift(); continue; }
+          if (frei(w.d)) { d = w.d; this.wants.shift(); } else if (++w.alt > 2) { this.wants.shift(); continue; }
+          break; }
         if (!frei(d)) { // angestoßen: ein Herz weniger, danach biegt Rute von selbst ab, dorthin, wo mehr Platz ist und niemand steht
           if (this.safe <= 0 && !this.over) { this.rempler(k.c + d[0], k.r + d[1]); return; } // erst zeigen, was passiert ist; abgebogen wird beim nächsten Schritt
           const seiten = [[-d[1], d[0]], [d[1], -d[0]]].filter(frei).sort((a, b) => (this.besetzt(k.c + a[0], k.r + a[1], true) ? 1 : 0) - (this.besetzt(k.c + b[0], k.r + b[1], true) ? 1 : 0) || Math.abs(k.c + a[0] - COLS / 2) + Math.abs(k.r + a[1] - ROWS / 2) - Math.abs(k.c + b[0] - COLS / 2) - Math.abs(k.r + b[1] - ROWS / 2));
           d = seiten[0] || [-d[0], -d[1]]; }
-        this.dir = d; this.want = null;
+        this.dir = d;
         const nc = k.c + d[0], nr = k.r + d[1], treffer = this.besetzt(nc, nr, true); // der Letzte rückt gerade weg, seine Kachel ist frei
         if (treffer && this.safe <= 0 && !this.over) { this.knall(cx(nc), cy(nr), '💫'); this.durcheinander(treffer); }
         // alle rücken eine Kachel weiter, jeder auf den Platz seines Vordermanns

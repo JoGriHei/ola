@@ -916,7 +916,8 @@ function say(text, opts = {}) {
       speechSynthesis.speak(u);
     } catch (e) { setTimeout(end, 900); }
   };
-  const file = manifest[text];
+  // derselbe Satz von mehreren Figuren („Muito bem!“): Aufnahme der Figur dieser Übung („Text|lektion“), sonst die allgemeine
+  const file = manifest[text + '|' + (V && V.id)] || manifest[text];
   if (file && player) {
     try {
       player.onended = end;

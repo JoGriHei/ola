@@ -861,7 +861,7 @@
  "Onde há poucos limões?": "67bca3c59beffa66.mp3",
  "Mais!": "61095a27c13b8346.mp3",
  "Menos!": "88b6133ce2415c65.mp3",
- "Muito bem!": "945098edf35c3ff1.mp3",
+ "Muito bem!": "a9ec61758bfe8335.mp3",
  "Obrigada pela ajuda!": "db77a4a5b6cc5f6b.mp3",
  "E o casaco do Leo é vermelho.": "c67ee22cd0c787c2.mp3",
  "E estes são os amigos: o Leo, o Benni e o Nico, com a mãe, a Elli, e o pai, o Michi.": "f0a4a01f4c04270a.mp3",
@@ -2056,5 +2056,9 @@
  "Selma! Em Faro não há vento!": "bfbf5db7ed36d7dc.mp3",
  "Selma! Em Faro não há nuvens!": "35309dbde17c1e3c.mp3",
  "Selma! Em Faro não há trovoada!": "608904d6ba627ff7.mp3",
- "Selma! Em Faro não há nevoeiro!": "aa2d077c4f591446.mp3"
+ "Selma! Em Faro não há nevoeiro!": "aa2d077c4f591446.mp3",
+ "Muito bem!|numeros": "cbc1f1b658082339.mp3",
+ "Muito bem!|creche": "945098edf35c3ff1.mp3",
+ "Muito bem!|estacoes": "945098edf35c3ff1.mp3",
+ "Muito bem!|semana": "a9ec61758bfe8335.mp3"
 }

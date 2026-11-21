@@ -3829,6 +3829,7 @@ const GAMES = [
   { id: 'gomas', e: '🍬', name: 'O Pandi e as gomas', intro: { how: '👆 ↔️ ↕️', good: ['🍬', 'gomas-cavaquinho'], bad: ['gast-ada', 'gast-leo', 'gast-pedro'], de: 'Pandi hat Hunger auf Gummibärchen! Wische in die Richtung, in die er laufen soll, oder tippe neben ihn. Iss alle Gummibärchen auf. Pass auf: Ada, Leo und Pedro wollen dich fangen. Holst du dir das Cavaquinho, tanzen alle und du hast kurz Ruhe. Für jedes Wortbild gibt es fünf Punkte extra.' } },
   { id: 'fila', e: '🎶', name: 'A fila da festa', intro: { how: '👂 👆 ↔️ ↕️', good: ['gast-rute', 'gast-leo', 'gast-avo-oma'], bad: [], de: 'Rute macht eine Polonaise durch den Garten. Wische in die Richtung, in die sie gehen soll, oder tippe neben sie. Hör gut zu, wen Rute ruft, und hol genau diesen Gast ab. Dann hängt er sich hinten an. Ein falscher Gast kommt nicht mit. Pass auf: Blinkt es vor Rute rot, ist der Weg versperrt. Dann schnell abbiegen! Stößt Rute an die Hecke, an einen Blumentopf oder an ihre eigene Schlange, kostet das ein Herz. Hol alle zwölf Gäste ab!' } },
   { id: 'lili', e: '🧋', img: 'lili', name: 'A Lili salta', intro: { how: '👆 ↔️', good: ['presente', 'presente-dourado'], bad: ['nuvem-chuva'], de: 'Lili hüpft vom Trampolin hoch in die Wolken. Halte den Finger links oder rechts, dann hüpft sie dorthin. Tippe zweimal schnell, dann springt Lili extra hoch und macht ein Kunststück. Sammle die Geschenke ein! Im goldenen Geschenk steckt eine Überraschung: ein Ballon, ein Zauberstern, ein Magnet, eine Extraperle oder ganz viele Geschenke! Weich den Regenwolken aus. Wenn Lili herunterfällt, lenk sie auf ein Trampolin. Landet sie im Gras, geht eine Perle kaputt. Ganz oben wartet eine goldene Wolke mit einem großen Geschenk. Wer dort landet, gewinnt!' } },
+  { id: 'lisboa', e: '🛺', name: 'Lisboa é nossa!', intro: { how: '👆 🚪 ❗ ⭐', good: ['lx-tuktuk-1', 'lx-barco-1', 'lx-skate'], bad: ['tram-policia'], de: 'Das ist euer Lissabon! Such dir Ada oder Selma aus. Halte den Finger dorthin, wohin sie laufen soll. Oder tippe kurz auf eine Stelle, dann findet sie den Weg von selbst. Mit dem grünen Knopf steigst du ein und aus: aufs Skateboard, ins Tuk-Tuk, ins Boot oder in die Straßenbahn. Wo ein Ausrufezeichen steht, wartet jemand mit einem Auftrag. Geh in den gelben Ring und hör gut zu! Der rote Pfeil zeigt dir den Weg. Oben links kannst du zur Schwester umschalten. Aber Vorsicht: Wer mit dem Tuk-Tuk durch die Blumen fährt oder die Tauben aufscheucht, bekommt es mit der Polizistin zu tun. Am Abend ruft Mama zum Essen, dann ist der Tag vorbei.' } },
 ];
 // Spielzeit: 10 Minuten pro Kind und Tag. Ein angefangenes Spiel darf immer zu Ende gespielt werden,
 // danach startet keine neue Runde mehr (Hinweis auf der Spieleseite). Testprofil ohne Grenze.
@@ -3876,6 +3877,9 @@ function startGame(v) {
       try { player.onended = null; player.onerror = tts; player.src = url; player.playbackRate = 1; const pr = player.play(); if (pr && pr.catch) pr.catch(tts); } catch (e) { tts(); }
     },
     sprite: id => (media.spiele && media.spiele[id]) || null,
+    // Vokabelbild zu einem Wort (für Spiele, die bestimmte Wörter zeigen) und ein kleiner Speicher je Profil und Spiel
+    pic: pt => { const w = ALL.find(x => x.pt === pt); return (w && media.bilder[w.key]) || null; },
+    store: { get: () => (P().jogos || {})[v.id] || null, set: d => { const p = P(); p.jogos = p.jogos || {}; p.jogos[v.id] = d; save(); } },
     figure: id => `bilder/figuren/${id}.webp`,
     end: res => { if (V === v) go({ name: 'gameover', id: v.id, res: res || {} }); },
   };

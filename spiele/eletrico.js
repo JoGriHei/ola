@@ -3,7 +3,7 @@
 // wer aus der Fahrt heraus bremst und weiter hält, fährt nach kurzem Halt zurück).
 // An den Haltestellen stehen Schilder mit Bildern (Burg, Strand, Markt, …). Hält die Bahn am richtigen Schild, steigt der
 // Fahrgast aus, bedankt sich und der nächste steigt ein; dafür gibt es einen Stempel auf Pipos Fahrkarte. Zu spät gebremst
-// ist nicht schlimm: „Ups! Passámos a paragem!“ und zurückfahren. Falsches Schild: „Não é aqui!“. 6 Fahrgäste = Runde vorbei.
+// ist nicht schlimm: „Ups! Passámos a paragem!“ und zurückfahren; wer einfach weiterfährt, bekommt das Ziel nach vier bis acht Haltestellen wieder. Falsches Schild: „Não é aqui!“. 6 Fahrgäste = Runde vorbei.
 // Unterwegs: Tauben oder ein Auto auf den Schienen (Glocke 🔔 läuten, sonst bremst die Bahn von selbst und hält mit Abstand davor;
 // die Tauben fliegen flatternd auf, das Auto fährt mit
 // Motorgeräusch zur Seite weg), Ampeln (rot, bis die Bahn davor gewartet hat; wer bei Rot durchfährt, wird von der
@@ -145,7 +145,7 @@
         this.trip = this.trips[this.done % this.trips.length];
         this.guest.setTexture('g-' + this.trip.g); this.guest.setScale((this.tramH * 0.42) / this.guest.height);
         this.guest.setAlpha(0); this.tweens.add({ targets: this.guest, alpha: 1, duration: 400 });
-        this.missedAt = null; this.wrongAt = null; this.tripX = this.x;
+        this.missedAt = null; this.wrongAt = null; this.tripX = this.x; this.targetIn = 0;
         // die Haltestelle, an der die Bahn gerade steht, zählt erst wieder, wenn sie weggefahren ist
         this.ignore = this.stops.find(s => Math.abs(s.x - this.x) < ZONE) || null;
         // Ziel: eine der nächsten drei Haltestellen, die noch nicht zu sehen sind (mal die erste, mal eine spätere);
@@ -183,6 +183,7 @@
         this.lastStopX = x;
         let d;
         if (this.trip && this.needTarget) { d = this.trip.d; this.needTarget = false; }
+        else if (this.trip && this.targetIn > 0 && --this.targetIn === 0) d = this.trip.d; // verpasstes Ziel kommt wieder
         else { const last = this.stops[this.stops.length - 1]; d = Phaser.Utils.Array.GetRandom(DEST.filter(z => z !== (this.trip && this.trip.d) && z !== (last && last.d))); }
         const pole = this.add.rectangle(0, 0, 8, 236, 0x2b3a55).setOrigin(0.5, 1);
         const disk = this.add.circle(0, -262, 44, 0xffffff).setStrokeStyle(5, 0x2b3a55);
@@ -336,6 +337,7 @@
         } else this.v = 0;
         this.x += this.v * dt;
         if (this.x < 0) { this.x = 0; this.v = Math.max(0, this.v); }
+        if (window.OLA_DEBUG) window.OLA_TRAM_SZENE = this; // nur Testseite
         if (window.OLA_DEBUG) window.OLA_TRAM = { x: Math.round(this.x), v: Math.round(this.v), done: this.done, stops: this.stops.filter(s => s.x > this.x - ZONE).map(s => [Math.round(s.x), s.d, s.d === this.trip.d]).slice(0, 4),
           events: this.events.map(e => [Math.round(e.x), e.kind, e.state]), gas, brake, busy: this.busy };
         while (this.nextStopX < this.x + AHEAD) this.addStop();
@@ -379,6 +381,16 @@
         if (tgt && this.x - tgt.x > ZONE + 60 && this.missedAt !== tgt) {
           this.missedAt = tgt; this.api.say('Ups! Passámos a paragem!');
           this.tweens.add({ targets: tgt.mark, alpha: 0.2, duration: 300, yoyo: true, repeat: 5 });
+        }
+        // weit am Ziel vorbei und immer weiter gefahren: das Ziel kommt wieder, aber nicht gleich, sondern als vierte bis achte
+        // Haltestelle voraus (sonst käme es nie mehr: neue Haltestellen meiden das Ziel der laufenden Fahrt)
+        if (tgt && this.x - tgt.x > 900 && !tgt.denovo) {
+          tgt.denovo = true;
+          const voraus = this.stops.filter(s => s.x > this.x + ZONE);
+          if (!voraus.some(s => s.d === this.trip.d) && !this.targetIn) {
+            const k = Phaser.Math.Between(4, 8);
+            if (voraus.length >= k) this.setDest(voraus[k - 1], this.trip.d); else this.targetIn = k - voraus.length; // so viele neue Haltestellen bis zum Ziel
+          }
         }
       }
 
